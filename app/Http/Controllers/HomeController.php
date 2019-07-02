@@ -29,6 +29,7 @@ class HomeController extends Controller
     {
         $ct= new GrupoController();
         $grupos=$ct->GetGrupos();
+        //var_dump($grupos);
         $user=Auth::user();
         return view('home', ['user'=>$user], ['grupos'=>$grupos]);
     }

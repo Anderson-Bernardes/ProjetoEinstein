@@ -25,6 +25,9 @@ class GrupoController extends Controller
         $user=Auth::user();
         $grupos=DB::table('grupos')->select('id', 'nome', 'tema' ,'foto')
                     ->where('idUsuario', '=', $user->getAuthIdentifier())->get();
+
+
+
         return view('Grupos', ['user'=>$user], ['grupos'=>$grupos]);
     }
 
@@ -84,8 +87,10 @@ class GrupoController extends Controller
     }
 
     public function CriaPost(Request $request){
-            /*echo $request['grupo'];
-            echo $request['texto'];*/
+            echo $request['grupo'];
+            echo $request['texto'];
+
+           // DB::table('grupos')
         echo $request['imagem'];
     }
 
