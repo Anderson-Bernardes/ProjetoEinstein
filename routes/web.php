@@ -27,7 +27,7 @@ Route::post('/criacao', 'GrupoController@store')->name('criaGrupo');
 Route::post('/fotoperfil', 'UserController@updateFotoUsario')->name('updateFotoUser');
 Route::post('/dadosUsuario', 'UserController@updateDadosUser')->name('updateDadosUser');
 Route::post('/removeAmigo', 'AmigosController@remove')->name('removeAmigo');
-Route::post('/post', 'GrupoController@CriaPost')->name('criaPost');
+Route::post('/post', 'PostsController@store')->name('criaPost');
 
 Route::get('/admin/logout', function(){
     Session::flush();

@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('sobrenome')->default('');
             $table->string('username')->default('');
-            //$table->date('nascimento');
+            $table->date('nascimento')->nullable();
             $table->string('sexo')->default('NE');
             $table->string('foto')->default('null');
             $table->string('categoria')->default('');

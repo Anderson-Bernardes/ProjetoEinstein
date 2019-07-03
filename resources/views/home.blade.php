@@ -118,7 +118,7 @@
                             <select name="grupo" class="form-control  form-control-sm">
                                 <option selected="">Escolha uma página para enviar sua pergunta</option>
                                     @foreach($grupos as $grupo)
-                                        <option name="{{$grupo->nome}}" value="{{$grupo->nome}}">{{$grupo->nome}}</option>
+                                        <option name="{{$grupo->nome}}" value="{{$grupo->id}}">{{$grupo->nome}}</option>
                                     @endforeach
                             </select>
                         </div>

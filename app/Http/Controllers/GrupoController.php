@@ -81,7 +81,7 @@ class GrupoController extends Controller
                 function($join){
                     $join->on('grupos.id', '=', 'grupos_curtidos_usuario.idPagina')
                     ->where('grupos_curtidos_usuario.idUsuario', '=', Auth::user()->getAuthIdentifier());
-        })->select('nome')->get();
+        })->select('nome', 'id')->get();
 
         return $dados;
     }
