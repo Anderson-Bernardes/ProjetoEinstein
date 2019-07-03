@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Posts;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -37,6 +38,7 @@ class PostsController extends Controller
     {
         date_default_timezone_set('America/Sao_Paulo');
         $user = Auth::user();
+        $postsModel =  new Posts();
         //echo 'to dentro do echo da pagina de posts';
         //echo $request['grupo'];
         //echo $request['texto'];
@@ -53,9 +55,7 @@ class PostsController extends Controller
                 'created_at'=> date('Y-m-d H:i:s'),
                 'updated_at'=> date('Y-m-d H:i:s')];
 
-
-        print_r($dados);
-        //$this->create()
+        $postsModel->create($dados);
     }
 
     /**

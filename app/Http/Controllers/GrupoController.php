@@ -86,14 +86,6 @@ class GrupoController extends Controller
         return $dados;
     }
 
-    public function CriaPost(Request $request){
-            echo $request['grupo'];
-            echo $request['texto'];
-
-           // DB::table('grupos')
-        echo $request['imagem'];
-    }
-
     /**
      * Display the specified resource.
      *
