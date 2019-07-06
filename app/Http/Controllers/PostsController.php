@@ -36,26 +36,33 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        date_default_timezone_set('America/Sao_Paulo');
-        $user = Auth::user();
-        $postsModel =  new Posts();
-        //echo 'to dentro do echo da pagina de posts';
-        //echo $request['grupo'];
-        //echo $request['texto'];
-        if(isset($request['imagem'])){
-            $imagem = $request['imagem'];
+        if(isset($request['grupo']) && (isset($request['texto']) || ($request->hasFile('imagem') && $request->file('imagem')->isValid()))){
+            date_default_timezone_set('America/Sao_Paulo');
+            $user = Auth::user();
+            $postsModel =  new Posts();
+
+            if(isset($request['texto']))
+                $texto = $request['texto'];
+            else
+                $texto = null;
+
+            if(isset($request['imagem']))
+                $imagem = $request['imagem'];
+            else
+                $imagem = null;
+
+            $dados =['user_id'  => $user->getAuthIdentifier(),
+                    'grupo_id'  => $request['grupo'],
+                    'texto'     => $texto,
+                    'imagem'    => $imagem,
+                    'created_at'=> date('Y-m-d H:i:s'),
+                    'updated_at'=> date('Y-m-d H:i:s')];
+            if($postsModel->create($dados))
+                return redirect()->back()->with('success', 'Post Criado Com sucesso');
+            else
+                return redirect()->back()->with('error', 'Falha ao criar a postagem');
         }
-        else
-            $imagem = null;
-
-        $dados =['user_id'  => $user->getAuthIdentifier(),
-                'grupo_id'  => $request['grupo'],
-                'texto'     => $request['texto'],
-                'imagem'    => $imagem,
-                'created_at'=> date('Y-m-d H:i:s'),
-                'updated_at'=> date('Y-m-d H:i:s')];
-
-        $postsModel->create($dados);
+        return redirect()->back()->with('error', 'Parametros não encontrados');
     }
 
     /**
