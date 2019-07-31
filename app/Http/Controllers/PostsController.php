@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Posts;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class PostsController extends Controller
 {
@@ -15,7 +16,13 @@ class PostsController extends Controller
      */
     public function index()
     {
-        //
+        //metodo que carrega os posts do usuario
+
+        $usuario = Auth::user();
+
+        $usuario->getAuthIdentifier();
+       /* $posts = DB::table('gruposposts')->where()
+        return $posts;*/
     }
 
     /**
