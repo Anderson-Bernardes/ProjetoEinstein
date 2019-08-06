@@ -12,6 +12,7 @@
         "deployer/deployer": "^6.4",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
+        "laravel/socialite": "^3.2.0",
         "laravel/tinker": "^1.0",
         "prettus/l5-repository": "^2.6"
     },
