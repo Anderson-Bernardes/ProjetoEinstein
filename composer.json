@@ -14,7 +14,9 @@
         "laravel/framework": "5.8.*",
         "laravel/socialite": "^3.2.0",
         "laravel/tinker": "^1.0",
-        "prettus/l5-repository": "^2.6"
+        "prettus/l5-repository": "^2.6",
+        "ext-curl": "*",
+        "ext-json": "*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

@@ -6,6 +6,7 @@ use App\Posts;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class PostsController extends Controller
 {
@@ -58,13 +59,31 @@ class PostsController extends Controller
             else
                 $imagem = null;
 
-            $dados =['user_id'  => $user->getAuthIdentifier(),
-                    'grupo_id'  => $request['grupo'],
-                    'texto'     => $texto,
-                    'imagem'    => $imagem,
-                    'created_at'=> date('Y-m-d H:i:s'),
-                    'updated_at'=> date('Y-m-d H:i:s')];
-            if($postsModel->create($dados))
+            $id = strval($user->getAuthIdentifier());
+
+            $dados = array( 'user_id'  => $id,
+                            'grupo_id'  => $request['grupo'],
+                            'texto'     => $texto,
+                            'imagem'    => $imagem,
+                    //'created_at'=> date('Y-m-d H:i:s'),
+                    //'updated_at'=> date('Y-m-d H:i:s')
+            );
+            $dadosEncoded = json_encode($dados);
+
+            $url = "https://api-rede-einstein.herokuapp.com/api/post/criar";
+            $authorization = "Authorization: Bearer ".Session::get('token');
+
+            $ch = curl_init($url);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json' , $authorization ));
+            curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+            curl_setopt($ch,CURLOPT_HEADER, false);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $dadosEncoded);
+
+            $result = curl_exec($ch);
+            $retorno = json_decode($result, true);
+
+            if($retorno['status'] == 1)
                 return redirect()->back()->with('success', 'Post Criado Com sucesso');
             else
                 return redirect()->back()->with('error', 'Falha ao criar a postagem');

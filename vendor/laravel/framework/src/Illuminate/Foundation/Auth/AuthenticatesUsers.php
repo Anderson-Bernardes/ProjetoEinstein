@@ -5,6 +5,7 @@ namespace Illuminate\Foundation\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use mysql_xdevapi\Session;
 
 trait AuthenticatesUsers
 {
@@ -101,7 +102,25 @@ trait AuthenticatesUsers
      */
     protected function sendLoginResponse(Request $request)
     {
+        $dados =array('email' => $request['email'],
+            'password' => $request['password']);
+        $dadosEncoded = json_encode($dados);
+
+        $url = "https://api-rede-einstein.herokuapp.com/api/user/login";
+        //$url = "localhost:8080/api/user/login";
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+        curl_setopt($ch,CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $dadosEncoded);
+
+        $result = curl_exec($ch);
+        //print_r(json_decode($result));
+        $retorno = json_decode($result, true);
+
         $request->session()->regenerate();
+        $request->session()->put('token', $retorno['usuario']['token']);
 
         $this->clearLoginAttempts($request);
 
