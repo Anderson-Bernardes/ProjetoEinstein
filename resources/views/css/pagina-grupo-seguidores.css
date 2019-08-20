@@ -1,0 +1,64 @@
+#seguidor-imagem {
+
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.7);
+   
+
+
+}
+
+.feed-de-grupo .card-feed .cardseguidores .seguidor-foto-nome {
+
+    margin-top: 10px;
+    margin-left: 10px;
+    
+
+
+}
+.feed-de-grupo .card-feed .cardseguidores .seguidor-foto-nome a {
+
+    float: right;
+    margin-right: 36%;
+    margin-top: 20px;
+    color: rgb(90, 84, 173);
+    
+
+}
+.feed-de-grupo .card-feed .cardseguidores .seguidor-foto-nome p {
+
+    float: right;
+    margin-right: 42%;
+    margin-top: 10px;
+    margin-top: -40px;
+   
+
+
+}
+.feed-de-grupo .card-feed .cardseguidores .seguir .btn {
+
+    float: right;
+    margin-right: 14px;
+    margin-top: -58px;
+    background-color: rgb(90, 84, 173);
+    margin-bottom: 58px;
+
+}
+.feed-de-grupo .card-feed .cardseguidores .seguir .btn:hover {
+
+    background-color: black;
+   
+
+}
+
+ .grow:hover
+{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: pointer;
+}
+
