@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/homee.css">
 
-    
+
     <link rel="stylesheet" type="text/css" href="css/paginaConfig.css">
     <script type="text/javascript" src="js/feed.js"></script>
 
@@ -21,13 +21,14 @@
         <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto" style="margin-left: 20px;">
                 <form class="form-inline">
                     <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Search" style="padding-left: 18px; border-radius: 40px; min-width:480px;" id="mysearch">
                   <div class="input-group-addon" style="margin-left: -38px; z-index: 3; border-radius: 40px; background-color: transparent; border:none;">
                     <button class="btn btn-light btn-sm" type="submit" style="border-radius: 20px;" id="search-btn"><i class="fa fa-search"></i></button>
+                  </div>
                     </form>
           </ul>
           <ul class="navbar-nav ">
@@ -36,7 +37,7 @@
                 <i class="fa fa-envelope" style="color: rgb(255, 255, 255);">
                   <span class="badge badge-danger" >1</span>
                 </i>
-                
+
               </a>
             </li>
               <li class="nav-item dropdown">
@@ -46,7 +47,7 @@
                     </i>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   
+
                                   <div class="media-left media-middle">
                                       <a href="#">
                                           <img class="x" src="http://placehold.it/40x40">
@@ -67,32 +68,32 @@
                     <i class="fa fa-user"  style="color: rgb(255, 255, 255);">
                       <span class="badge badge-danger" >3</span>
                     </i>
-                    
+
                   </a>
                   <a class="nav-link" href="#">
                       <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" id="image">
                   </a>
               </li>
-           
+
           </ul>
 
         </div>
-         
+
         </div>
       </nav>
       </header>
-       
-      
+
+
 <div class="container">
                         <div class="row">
-                                <div class="col-3"> 
+                                <div class="col-3">
                                         <div class="card">
                                             <div class="name-foto">
-                                            <strong> <p>Bem Vindo(a)</p></strong>  
+                                            <strong> <p>Bem Vindo(a)</p></strong>
                                                 <img  alt="" src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D">
-                                                <a  href="#">Cely Sastre D. </a> 
-                                            </div>  
-                                        </div>     
+                                                <a  href="#">Cely Sastre D. </a>
+                                            </div>
+                                        </div>
                                         <div class="navcard">
                                                 <div class="card">
                                                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
@@ -105,8 +106,8 @@
                                                           </div>
                                                     </div>
 
-                                        </div>                      
-                                        
+                                        </div>
+
                                      </div>
 
 
@@ -152,8 +153,8 @@
                                                                                 <option>Sociologia</option>
                                                                         </select>
                                                                 </div>
-                                                                
-                                          
+
+
                                                                 </div>
                                                                 <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
                                                                     <div class="form-group">
@@ -199,9 +200,9 @@
                                                                                           <option>Sociologia</option>
                                                                                   </select>
                                                                           </div>
-                                          
+
                                                                           </div>
-                                                                         
+
                                                                     </div>
                                                                     <div class="py-2"></div>
                                                                 </div>
@@ -227,25 +228,25 @@
                                         <div class="col-4">
                                                         <div class="card">
                                                             <div class="card-head">
-                                                              <h4 style="text-align:center;"><i class="fas fa-star mt-2" style="color: rgb(255,215,0)" ></i></h4>  
-                                                              <strong><p class="classi-position" style="text-align:center;" >classificação</p></strong>  
+                                                              <h4 style="text-align:center;"><i class="fas fa-star mt-2" style="color: rgb(255,215,0)" ></i></h4>
+                                                              <strong><p class="classi-position" style="text-align:center;" >classificação</p></strong>
                                                                <hr>
                                                               </div>
                                                               <div class="card-corpo">
-                                                               
-                                                                <strong><h5 class="classi-position mt-2"  style="text-align:center;font-family: fantasy; color: rgb(90, 84, 173);"> INICIANTE</h5></strong>  
+
+                                                                <strong><h5 class="classi-position mt-2"  style="text-align:center;font-family: fantasy; color: rgb(90, 84, 173);"> INICIANTE</h5></strong>
                                                                 <div class="pontuacao-usuario" style="text-align:center;">
-                                                                  <a href="#"> <i id="fa-estrelas" class="fa fa-star"></i><i id="fa-estrelas1" class="fa fa-star"></i><i id="fa-estrelas2" class="fa fa-star"></i><i id="fa-estrelas3" class="fa fa-star"></i><i id="fa-estrelas4" class="fa fa-star"></i> </a> 
+                                                                  <a href="#"> <i id="fa-estrelas" class="fa fa-star"></i><i id="fa-estrelas1" class="fa fa-star"></i><i id="fa-estrelas2" class="fa fa-star"></i><i id="fa-estrelas3" class="fa fa-star"></i><i id="fa-estrelas4" class="fa fa-star"></i> </a>
                                                                 </div>
                                                               </div>
                                                         </div>
-                                                        
+
                                                         <div class="card">
                                                           <div class="raking-geral">
                                                               <strong> <i class="fas fa-crown mx-2"  style="color: rgb(255,215,0);"></i>Ranking Semanal</a> </strong>
                                                           </div>
                                                           <hr>
-                                                
+
                                                           <div class="usuarios-no-topo">
                                                               <div class="row">
                                                             <div class="foto-raking col-3">
@@ -280,29 +281,29 @@
                                                               <strong><p>1150pts</p></strong>
                                                             </div>
                                                             </div>
-                                                            
+
                                                           </div>
-                                                           
-                                                        
-                                                         
-                                                         
+
+
+
+
                                                             </div>
-                                                       
+
                                         </div>
 
                                 </div>
-                        
+
                             </div>
                             <div class="tab-pane fade" id="v-pills-pagina" role="tabpanel" aria-labelledby="v-pills-pagina-tab">
                                  <div class="pageconfig">
                                      <div class="card">
-                                         
-                                            
 
-                                                  
+
+
+
 
                                      </div>
-                                        
+
 
                                  </div>
 
@@ -315,17 +316,17 @@
                             <div class="tab-pane fade" id="v-pills-emblemas" role="tabpanel" aria-labelledby="v-pills-emblemas-tab">emblemas</div>
                           </div>
                         </div>
-                        
+
                       </div>
 
 
 
-     
 
 
 
-  
-     
+
+
+
 </div>
 
 
@@ -338,5 +339,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
+
 </html>
