@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Auth::routes();
@@ -32,7 +33,7 @@ Route::post('/post', 'PostsController@store')->name('criaPost');
 Route::get('/admin/logout', function(){
     Session::flush();
     Auth::logout();
-    return Redirect::to("/login")
+    return Redirect::to("/")
         ->with('message', array('type' => 'success', 'text' => 'You have successfully logged out'));
 })->name('logout');
 

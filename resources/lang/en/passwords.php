@@ -13,10 +13,15 @@ return [
     |
     */
 
-    'password' => 'Passwords must be at least eight characters and match the confirmation.',
-    'reset' => 'Your password has been reset!',
-    'sent' => 'We have e-mailed your password reset link!',
-    'token' => 'This password reset token is invalid.',
-    'user' => "We can't find a user with that e-mail address.",
+    //'password' => 'Passwords must be at least eight characters and match the confirmation.',
+    'password' => 'A senha precisa ter no mínimo oito caracteres e ser igual a confirmação.',
+    //'reset' => 'Your password has been reset!',
+    'reset' => 'Sua senha foi restaurada!',
+    //'sent' => 'We have e-mailed your password reset link!',
+    'sent' => 'Nós enviamos o e-mail com o link para restaurar sua senha!',
+    //'token' => 'This password reset token is invalid.',
+    'token' => 'Esse token de restauração de senha é inválido.',
+    //'user' => "We can't find a user with that e-mail address.",
+    'user' => "Não pudemos encontrar usuário com esse endereço de e-mail.",
 
 ];
