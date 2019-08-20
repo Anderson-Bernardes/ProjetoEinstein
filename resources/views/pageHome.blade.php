@@ -90,8 +90,14 @@
                                         <div class="card">
                                             <div class="name-foto">
                                             <strong> <p>Bem Vindo(a)</p></strong>
-                                                <img  alt="" src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D">
-                                                <a  href="#">Cely Sastre D. </a>
+                                                @if($user->foto == 'null')
+                                                    <img class="img-profile center-block"
+                                                         src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="">
+                                                @else
+                                                    <img class="img-profile center-block"
+                                                         src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="">
+                                                @endif
+                                                <a  href="{{route('userPerfil')}}">{{$user->name}}</a>
                                             </div>
                                         </div>
                                         <div class="navcard">
@@ -117,6 +123,8 @@
                             <div class="tab-pane fade show active" id="v-pills-feed" role="tabpanel" aria-labelledby="v-pills-feed-tab">
                                 <div class="row">
                                         <div class="col-8">
+                                            <form method="post" action="{{route('criaPost')}}" enctype="multipart/form-data">
+                                                {{csrf_field()}}
                                                 <div class="card gedf-card " >
                                                         <div class="card-header">
                                                             <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
@@ -136,11 +144,15 @@
                                                                 <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
                                                                     <div class="form-group">
                                                                         <label class="sr-only" for="message">post</label>
-                                                                        <textarea class="form-control" id="message" rows="4" placeholder="Escreva sua dúvida aqui (para obter uma boa resposta, descreva sua dúvida de forma simples e clara)"></textarea>
+                                                                        <textarea name="texto" class="form-control" id="message" rows="4" placeholder="Escreva sua dúvida aqui (para obter uma boa resposta, descreva sua dúvida de forma simples e clara)"></textarea>
                                                                     </div>
                                                                     <div class="escolha">
-                                                                        <select class="form-control">
-                                                                                <option selected="">Selecione a disciplina </option>
+                                                                        <select name="grupo" class="form-control">
+                                                                            @foreach($grupos as $grupo)
+                                                                                <option selected="">Escolha um grupo para enviar sua pergunta</option>
+                                                                                <option name="{{$grupo->nome}}" value="{{$grupo->id}}">{{$grupo->nome}}</option>
+                                                                            @endforeach
+                                                                               {{-- <option selected="">Selecione a disciplina </option>
                                                                                 <option>Matemática</option>
                                                                                 <option>Historia</option>
                                                                                 <option>Geografia</option>
@@ -150,7 +162,7 @@
                                                                                 <option>Química</option>
                                                                                 <option>Biologia</option>
                                                                                 <option>Filosofia</option>
-                                                                                <option>Sociologia</option>
+                                                                                <option>Sociologia</option>--}}
                                                                         </select>
                                                                 </div>
 
@@ -209,7 +221,7 @@
                                                             </div>
                                                             <div class="btn-toolbar justify-content-between">
                                                                 <div class="btn-group">
-                                                                    <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                                                                    <button name="postar" type="submit" class="btn btn-primary mt-2">Enviar</button>
                                                                 </div>
                                                                 <div class="btn-group">
                                                                     <button id="btnGroupDrop1" type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -224,6 +236,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                            </form>
                                         </div>
                                         <div class="col-4">
                                                         <div class="card">
