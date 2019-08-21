@@ -1,0 +1,257 @@
+#body1 {
+
+
+height: 100px;
+
+
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  position: relative;
+  width: 35px;
+  font-size: 35px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  font-size: 0.70rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  top: 3px;
+  line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  top: -10px;
+}
+
+#image {
+  display: block;
+  width: 48px;
+  margin: 2px auto 4px auto;
+  top: 0;
+  line-height: 24px;
+  border-radius: 50px;
+  border:2px solid #ffffff;
+
+}
+
+
+@media (min-width: 576px) {
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+  #image {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+    border-radius: 50px;
+    border:2px solid #ffffff;
+  
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+    
+  }
+  #image {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+    border-radius: 50px;
+    border:2px solid #ffffff;
+  
+  }
+  
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+    
+
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+  #image {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+    border-radius: 50px;
+    border:2px solid #ffffff;
+  
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+    
+  }
+ 
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+  #image {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+    border-radius: 50px;
+    border:2px solid #ffffff;
+  
+  }
+  
+}
+
+
+
+.navbar-brand{
+  position:relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+} 
+
+.navbar-icon-top .navbar-nav .dropdown-menu {
+  min-width: 10;
+  background: #ffffff;  
+  position: relative;
+}
+
+
+.card-img-top {
+    margin-top: 16px;
+   
+    
+    
+    
+}
+.breadcrumb{
+
+    background-color: #ffffff;
+
+}
+
+.block-update-card {
+    
+    border: 1px #FFFFFF solid;
+    
+    box-shadow: 1px 1px 8px #d8d8d8;
+    background-color: #FFFFFF;
+  }
+  .block-update-card .update-card-MDimentions {
+    width: 80px;
+    height: 80px;
+  }
+  .block-update-card .update-card-body {
+    margin-top: 10px;
+    margin-left: 5px;
+  } 
+  
+  .block-update-card .update-card-body h4 {
+    color: #737373;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .block-update-card .update-card-body p {
+    color: #737373;
+    font-size: 12px;
+  }
+  
+
+
+  
+  .navbar ul > li > a:hover{
+    border-bottom: 3px solid #FFFFFF; /* double border */
+    
+  }
+
+  #center{
+    
+    display: inline;
+}
+
+
+.media-left{
+  display: inline-block;
+}
+
