@@ -84,7 +84,7 @@
         <div class="col-3">
             <div class="card">
                 <div class="name-foto">
-                    <strong><p>Bem Vindo(a)</p></strong>
+                    <p class="welcome"><strong> Bem Vindo(a)</strong></p> 
                     @if($user->foto == 'null')
                         <img class="img-profile center-block"
                              src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="">
@@ -92,36 +92,24 @@
                         <img class="img-profile img-thumbnail center-block"
                              src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="">
                     @endif
-                    <a href="{{route('userPerfil')}}">{{$user->name}}</a>
+                    <a class="nomeusuario" href="{{route('userPerfil')}}">{{$user->name}}</a>
                 </div>
             </div>
             <div class="navcard">
                 <div class="card">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-feed-tab" data-toggle="pill" href="#v-pills-feed"
-                           role="tab" aria-controls="v-pills-feed" aria-selected="true"><i
-                                class="fas fa-rss-square mx-2"></i> Feed</a>
-                        <a class="nav-link" id="v-pills-pagina-tab" data-toggle="pill" href="#v-pills-pagina" role="tab"
-                           aria-controls="v-pills-pagina" aria-selected="false"><i
-                                class="fa fa-flag mx-2"></i>Páginas</a>
-                        <a class="nav-link" id="v-pills-material-tab" data-toggle="pill" href="#v-pills-material"
-                           role="tab" aria-controls="v-pills-material" aria-selected="false"><i
-                                class="fa fa-graduation-cap mx-2"></i>Material</a>
-                        <a class="nav-link" id="v-pills-amigos-tab" data-toggle="pill" href="#v-pills-amigos" role="tab"
-                           aria-controls="v-pills-amigos" aria-selected="false"><i
-                                class="fa fa-users mx-2"></i>Amigos</a>
-                        <a class="nav-link" id="v-pills-recomendacoes-tab" data-toggle="pill"
-                           href="#v-pills-recomendacoes" role="tab" aria-controls="v-pills-recomendacoes"
-                           aria-selected="false"><i class="fas fa-book-reader mx-2"></i>Recomendações</a>
-                        <a class="nav-link" id="v-pills-emblemas-tab" data-toggle="pill" href="#v-pills-emblemas"
-                           role="tab" aria-controls="v-pills-emblemas" aria-selected="false"><i
-                                class="fas fa-crown mx-2"></i>Emblemas</a>
-                    </div>
+                <div class="nav flex-column" aria-orientation="vertical" >
+                <a class="nav-link active" href="#"><i class="fas fa-rss-square mx-2"></i> Feed</a>
+                <a class="nav-link" href="pagina-grupo.html"><i class="fa fa-flag mx-2"></i>Páginas</a>
+                <a class="nav-link" href="#"><i class="fa fa-graduation-cap mx-2"></i>Material</a>
+                <a class="nav-link" href="#v-pills-amigos"><i class="fa fa-users mx-2"></i>Amigos</a>
+                <a class="nav-link" href="#v-pills-recomendacoes"><i class="fas fa-book-reader mx-2"></i>Recomendações</a>
+                <a class="nav-link" href="#v-pills-emblemas"><i class="fas fa-crown mx-2"></i>Emblemas</a>
+                </div>
                 </div>
             </div>
         </div>
         <div class="col-9">
-            <div class="tab-content" id="v-pills-tabContent">
+            <!-- <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-feed" role="tabpanel"
                      aria-labelledby="v-pills-feed-tab">
                     <div class="row">
@@ -342,25 +330,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-pagina" role="tabpanel" aria-labelledby="v-pills-pagina-tab">
-                    <div class="pageconfig">
-                        <div class="card">
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="v-pills-material" role="tabpanel" aria-labelledby="v-pills-material-tab">
-                    material
-                </div>
-                <div class="tab-pane fade" id="v-pills-amigos" role="tabpanel" aria-labelledby="v-pills-amigos-tab">
-                    amigos
-                </div>
-                <div class="tab-pane fade" id="v-pills-recomendacoes" role="tabpanel"
-                     aria-labelledby="v-pills-recomendacoes-tab">recomendações
-                </div>
-                <div class="tab-pane fade" id="v-pills-emblemas" role="tabpanel" aria-labelledby="v-pills-emblemas-tab">
-                    emblemas
-                </div>
-            </div>
+
+            </div> -->
         </div>
     </div>
 </div>
