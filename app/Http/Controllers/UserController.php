@@ -19,7 +19,7 @@ class UserController extends Controller
     public function index()
     {
         $user=Auth::user();
-        return view('PerfilUsuario', ['user'=>$user]);
+        return view('perfil-usuario', ['user'=>$user]);
     }
 
     public function updateFotoUsario(Request $request){
