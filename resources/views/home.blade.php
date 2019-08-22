@@ -18,7 +18,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/feed.css')}}">
 </head>
 
-<body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light border border-dark"
          style="background-color: #FFFFFF">
