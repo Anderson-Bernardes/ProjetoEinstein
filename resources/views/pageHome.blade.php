@@ -89,7 +89,7 @@
                         <img class="img-profile center-block"
                              src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="">
                     @else
-                        <img class="img-profile center-block"
+                        <img class="img-profile img-thumbnail center-block"
                              src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="">
                     @endif
                     <a href="{{route('userPerfil')}}">{{$user->name}}</a>
