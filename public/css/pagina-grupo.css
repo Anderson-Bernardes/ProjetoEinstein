@@ -43,7 +43,7 @@
 }
 
 .corpo .avatar-feed {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
 
 }
@@ -159,6 +159,7 @@ color: #3db0f7;
 }
 .card-informacoes .nav-item .nav-link.active {
     border-bottom: 3px solid  rgb(90, 84, 173);
+
     
     }
 
@@ -188,7 +189,7 @@ color: #3db0f7;
 
 
 .card-informacoes .nav .botao-de-seguir {
-    margin-left: 46%;
+    margin-left: 48%;
     margin-top: 18px;
     
 }
@@ -199,16 +200,49 @@ color: #3db0f7;
 
 .corpo .feed-de-grupo  {
 
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
 
 }
 .corpo .feed-de-grupo .foto-usuario-grupo {
 
-    margin-left: 22px;
+    margin-left: 25px;
     margin-top: 8px;
 
 }
+.corpo .feed-de-grupo .foto-usuario-grupo a>p {
+    margin-top: 19px;
+    /* margin-left: -28px; */
+    float: left;
+    
+    margin-left: 4px;
+    float: left;
+    color: rgb(90, 84, 173);
+    
+
+
+}
+
+
+
+.corpo .feed-de-grupo .foto-usuario-grupo .opcoes a {
+   
+     
+            color: #6c757d;
+            float: right;
+            margin-right: 24px;
+            margin-top: 10px;
+            text-decoration:none; 
+
+        
+}
+.corpo .feed-de-grupo .foto-usuario-grupo .opcoes a:hover {
+   
+    color: rgb(90, 84, 173);
+            
+        
+}
+
 
 #img-feed-grupo {
 
@@ -219,49 +253,41 @@ color: #3db0f7;
     border-radius: 50%;
     border: 5px solid rgba(255,255,255,0.7);
     float: left;
-
-
-}
-
-.corpo .feed-de-grupo .cardpost .foto-usuario-grupo p{
-
    
-  
-    
-    font-size: 15px;
-    margin-top: 19px;
-    color: rgb(90, 84, 173);
-    /* margin-right: 313px; */
-    margin-left: 4px;
-    float: left;
 
 }
 
-.corpo .feed-de-grupo .cardpost .foto-usuario-grupo .hora-data {
-
-   float: none;
-   margin-left: 76%;
-
-}
 
     /* card defeed publicações do tipo texto/*
 */
 
  .cardpost .publicacao-feed-texto p {
 
-      margin-top: 10px;
+     
     margin-top: 6px;
     margin-left: 26px;
     /* margin-right: 16px; */
     width: 24em;
     word-wrap: break-word;
+    
+}
+ .cardpost .publicacao-feed-texto .titulo h6{
+
+    margin-left: 26px;
+    /* margin-right: 16px; */
+    width: 24em;
+    word-wrap: break-word;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+
+    
 }
 
 .card>hr {
     margin-right: 0;
     margin-left: 0;
     /* margin-bottom: 57px; */
-    margin-top: 0px;
+    margin-top: 10px;
 }
    /* tags /*
 */
@@ -276,11 +302,103 @@ color: #3db0f7;
     text-align: center;
     /* margin: 8px; */
     margin-right: 10px;
-    margin-bottom: 8px;
+  
     color:#6c757d;
-    font-size: 14px;
+    font-size: 11px;
 
 }
+    /* card defeed publicações do tipo texto e foto/*
+*/
+
+
+#foto-exercico {
+
+    width: 50%;
+    border-radius: 1%;
+    border: 1px solid rgba(0,0,0,.125);
+    
+
+  
+}
+
+.cardpost .publicacao-feed-foto .tags a{
+
+   
+  
+    
+    float: left;
+    color:#6c757d;
+    font-size: 11px;
+    margin-right: 0px;
+    margin-left: 14px;
+
+
+}
+
+
+
+
+
+.cardpost .publicacao-feed-foto .card-texto-foto{
+
+   
+  margin: 10px;
+  padding: 0px;
+
+
+
+}
+
+.cardpost .publicacao-feed-foto .card-texto-foto .texto-ao-lado h6 {
+
+
+   float: right;
+    width: 46%;
+    margin-top: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  
+
+
+}
+
+
+   /* card defeed publicações do tipo video*
+
+*/
+
+
+.cardpost .publicacao-feed-video .titulo h6{
+
+     margin-bottom: 14px;  
+    margin-left: 26px;
+    /* margin-right: 16px; */
+    width: 24em;
+    word-wrap: break-word;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+
+}
+
+.cardpost .publicacao-feed-video .card-video {
+
+        margin: 2px;
+        border: 3px solid rgba(0,0,0,.125);
+
+
+}
+.cardpost .publicacao-feed-video .tags a{
+
+    float: left;
+    color:#6c757d;
+    font-size: 11px;
+    margin-right: 0px;
+    margin-left: 14px;
+
+
+}
+
+
 
 
    /* fooster /*
@@ -320,6 +438,13 @@ color: #3db0f7;
 }
 
 .cardpost .foster p:hover{
+
+   
+    color:#6c757d;
+    cursor: pointer;
+}
+
+.cardpost .foster .foster-resolver a:hover{
 
    
     color:#6c757d;

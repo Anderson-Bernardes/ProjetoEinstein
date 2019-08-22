@@ -7,20 +7,33 @@
 
     
     max-width: 85%;
-    margin: 0 auto;
+    margin: auto;
     border: 2px solid #fff;
-    border-radius: .25rem;
-
+    border: 3px solid rgba(255,255,255,0.7);
+    overflow: hidden;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  
+    
 
 }
-.corpo .capa .cardcapa .capa-imagem
+/* mudei a border card*/
+.corpo .capa .cardcapa .cardheader
 {
-    max-width: 100%;
-    max-height: 170px;
+    
+   
+    background: url("https://66.media.tumblr.com/99370a732506ac7b78cf84902af645ce/tumblr_nfkfurnLhW1s75y9to10_1280.png");
+    height: 210px;
+    background-size:100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -khtml-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    
 }
 
 .corpo .avatar-feed {
-    max-width: 80%;
+    max-width: 82%;
     margin: 0 auto;
 
 }
@@ -91,7 +104,7 @@
 
     margin-top: 15px;
     position: relative;
-    display: -ms-flexbox;
+
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -108,11 +121,10 @@
   
   .card a {
   
-    color: rgb(90, 84, 173);
+    color:#6c757d;
     font-weight: bold;
   
   }
-<<<<<<< HEAD
 
   .informa-perfil .gedf-card .header .nav {
 
@@ -284,12 +296,6 @@
 
 /* grupos  */
 
-.tab-pane .grupos .card-deck .cardgrupos  {
 
 
-    background-color: #dc3545;
 
-
-}
-=======
->>>>>>> b64b8b2d1a8dead08e66f575559efea650b0c79c
