@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\amigos;
-use function foo\func;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;

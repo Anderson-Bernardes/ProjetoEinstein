@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/homee.css">
     <link rel="stylesheet" type="text/css" href="css/paginaConfig.css">
-    <script type="text/javascript" src="js/feed.js"></script>
+    <!--script type="text/javascript" src="js/feed.js"></script>-->
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'summary-ckeditor' );
+    </script>
     <title>Einstein</title>
 </head>
 <body id="body" style="background-color:rgb(233,235,238);">
@@ -84,7 +88,7 @@
         <div class="col-3">
             <div class="card">
                 <div class="name-foto">
-                    <p class="welcome"><strong> Bem Vindo(a)</strong></p> 
+                    <p class="welcome"><strong> Bem Vindo(a)</strong></p>
                     @if($user->foto == 'null')
                         <img class="img-profile center-block"
                              src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="">
@@ -109,6 +113,21 @@
             </div>
         </div>
         <div class="col-9">
+
+
+
+            <form>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+                <script>
+                    // Replace the <textarea id="editor1"> with a CKEditor
+                    // instance, using default configuration.
+                    CKEDITOR.replace( 'editor1' );
+                </script>
+            </form>
+
+
             <!-- <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-feed" role="tabpanel"
                      aria-labelledby="v-pills-feed-tab">
