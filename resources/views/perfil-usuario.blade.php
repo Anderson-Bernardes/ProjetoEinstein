@@ -67,9 +67,16 @@
                             </i>
                         </a>
                         <a class="nav-link" href="#">
-                            <img
+                            {{--<img
                                 src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D"
-                                id="image" alt="">
+                                id="image" alt="">--}}
+                            @if($user->foto == 'null')
+                                <img class="img-profile center-block"
+                                     src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="" id="image">
+                            @else
+                                <img class="img-profile img-thumbnail center-block"
+                                     src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="" id="image">
+                            @endif
                         </a>
                     </li>
                 </ul>
@@ -180,19 +187,27 @@
                             <div class="body">
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                                        @foreach($postagens['postagens'] as $post)
                                         <div class="card card-publicao">
                                             <div class="foto-usuario-grupo">
-                                                <img
-                                                    src="https://66.media.tumblr.com/50d8edbe01db286bcc42c8ea2de0e381/tumblr_pu3c6pPYE41y9ujooo5_500.png"
-                                                    id="img-feed-grupo" alt="...">
-                                                <a href=""><p>@CelySastre</p></a>
+                                               {{-- <img
+                                                    src="{{$user->foto}}"
+                                                    id="img-feed-grupo" alt="...">--}}
+                                                @if($user->foto == 'null')
+                                                    <img id="img-feed-grupo"
+                                                         src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="...">
+                                                @else
+                                                    <img id="img-feed-grupo"
+                                                         src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="...">
+                                                @endif
+                                                <a href=""><p>{{$user->username}}</p></a>
                                                 <div class="opcoes"><a href=""><h3>...</h3></a></div>
                                             </div>
                                             <div class="publicacao-feed-texto">
                                                 <div class="titulo">
                                                     <h6>Matemática Básica</h6>
                                                 </div>
-                                                <p>Matemática matemática matemática matemática 23-(2+8)-7​
+                                                <p>{{$post['texto']}}
                                                 </p>
                                                 <div class="tags">
                                                     <a href=""><p>#Matemática</a>
@@ -215,7 +230,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card card-publicao">
+                                        @endforeach
+                                    {{--    <div class="card card-publicao">
                                             <div class="foto-usuario-grupo">
                                                 <img
                                                     src="https://66.media.tumblr.com/50d8edbe01db286bcc42c8ea2de0e381/tumblr_pu3c6pPYE41y9ujooo5_500.png"
@@ -286,7 +302,7 @@
                                                     <h5><i class="far fa-question-circle"></i></h5>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>--}}
                                     </div>
                                     <div class="tab-pane fade show active" id="grupos" role="tabpanel"
                                          aria-labelledby="grupos-tab">
