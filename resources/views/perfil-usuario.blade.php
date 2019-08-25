@@ -12,7 +12,7 @@
 <header>
     <nav class="navbar navbar-icon-top navbar-expand-xl" style="background-color: rgb(90, 84, 173);">
         <div class="container">
-            <a class="navbar-brand  mx-1" href="#" style="color: rgb(255, 255, 255); font-weight: bold;">Einstein</a>
+            <a class="navbar-brand  mx-1" href="{{route("home")}}" style="color: rgb(255, 255, 255); font-weight: bold;">Einstein</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -124,12 +124,21 @@
                                 </small></a>
                         </div>
                         <div class="lista-de-amigos">
+                            @foreach($amigos['amigos'] as $amigo)
                             <div class="amigos">
-                                <img
+                                {{--<img
                                     src="https://66.media.tumblr.com/abf2bf28741a1debde3292529c2a8c0d/5e5c8ae68d670e74-ce/s640x960/ccc0a7670c5c0d49c7bb078770c5f67178088a83.jpg"
-                                    class="imagem-amigo" alt="...">
+                                    class="imagem-amigo" alt="...">--}}
+                                @if($amigo['foto'] == 'null')
+                                    <img class="imagem-amigo"
+                                         src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="...">
+                                @else
+                                    <img class="imagem-amigo"
+                                         src="{{url('storage/FotoPerfil/'.$amigo['foto'])}}" alt="...">
+                                @endif
                             </div>
-                            <div class="amigos">
+                            @endforeach
+                            {{--<div class="amigos">
                                 <img
                                     src="https://66.media.tumblr.com/b1843e9c97f0b2cc2398783f5571a224/5e5c8ae68d670e74-d8/s640x960/3d9f5e3d2b95035bc5979e230386ebadc75476b1.jpg"
                                     class="imagem-amigo" alt="...">
@@ -153,7 +162,7 @@
                                 <img
                                     src="https://66.media.tumblr.com/864ea69f0c888f6c0f5e931c1587e029/tumblr_pu3ktz2qPB1uxg9roo3_400.jpg"
                                     class="imagem-amigo" alt="...">
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                 </div>

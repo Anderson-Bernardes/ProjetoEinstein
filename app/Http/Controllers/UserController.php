@@ -17,10 +17,12 @@ class UserController extends Controller
 
     public function index()
     {
+        $ac =  new AmigosController();
+        $amigos = $ac->GetAmigos();
         $pc = new PostsController();
         $postagens = $pc->index();
         $user=Auth::user();
-        return view('perfil-usuario', ['user'=>$user], ['postagens'=> $postagens]);
+        return view('perfil-usuario', ['user'=>$user, 'postagens'=> $postagens, 'amigos'=>$amigos]);
     }
 
     public function updateFotoUsario(Request $request){
