@@ -72,10 +72,17 @@
                             </i>
 
                         </a>
-                        <a class="nav-link" href="#">
-                            <img
+                        <a class="nav-link" href="{{route("userPerfil")}}">
+                            {{--<img
                                 src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D"
-                                id="image">
+                                id="image">--}}
+                            @if($user->foto == 'null')
+                                <img class="img-profile center-block"
+                                     src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="" id="image">
+                            @else
+                                <img class="img-profile img-thumbnail center-block"
+                                     src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="" id="image">
+                            @endif
                         </a>
                     </li>
                 </ul>
@@ -116,14 +123,18 @@
 
 
 
-            <form>
-            <textarea name="editor1" id="editor1" rows="10" cols="80">
+            <form id="editor1">
+                <label for="editor1">Editor 1</label>
+                <textarea name="editor1" id="editor1" rows="10" cols="80">
                 This is my textarea to be replaced with CKEditor.
             </textarea>
                 <script>
                     // Replace the <textarea id="editor1"> with a CKEditor
                     // instance, using default configuration.
-                    CKEDITOR.replace( 'editor1' );
+                    CKEDITOR.replace( 'editor1',{
+                    extraPlugins: 'mathjax',
+                        mathJaxLib: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML',
+                        height: 320});
                 </script>
             </form>
 

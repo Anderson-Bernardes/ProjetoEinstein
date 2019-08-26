@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Posts;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -16,8 +17,12 @@ class UserController extends Controller
 
     public function index()
     {
+        $ac =  new AmigosController();
+        $amigos = $ac->GetAmigos();
+        $pc = new PostsController();
+        $postagens = $pc->index();
         $user=Auth::user();
-        return view('perfil-usuario', ['user'=>$user]);
+        return view('perfil-usuario', ['user'=>$user, 'postagens'=> $postagens, 'amigos'=>$amigos]);
     }
 
     public function updateFotoUsario(Request $request){
