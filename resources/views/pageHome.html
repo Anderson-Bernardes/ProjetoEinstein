@@ -90,7 +90,11 @@
                                             <div class="name-foto">
                                             <p class="welcome"><strong> Bem Vindo(a)</strong></p> 
                                                 <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" class="img-thumbnail ">
-                                                <a class="nomeusuario" href="#">Cely Sastre D. </a> 
+                                    
+                                                <div class="name">
+                                                  <a class="" href="#">Cely</a> 
+                                                </div>
+
                                             </div>  
                                         </div>     
                                         <div class="navcard">
@@ -169,13 +173,59 @@
                                             <div class="col-12">
                                                 <div class="questoes" id="questoes" style="display:block" >
                                                     <div class="form-group">
-                                                      <h5 class="mb-3">Qual sua duvida?</h5>
-                                                        <label class="sr-only" for="message">post</label>
-                                                       
-                                                        
+                                                      <h5 class="mb-3 ml-4">Qual sua duvida?</h5>
+                                                       <textarea></textarea>
+                                                        <div class="material-disciplina">
+                                                            <div class="disciplina">
+                                                                <select name="grupo" class="form-control">
+                                                                    <option selected="">Escolha um grupo para enviar sua
+                                                                        pergunta
+                                                                    </option>
+                                                                    @foreach($grupos as $grupo)
+                                                                        <option name="{{$grupo->nome}}"
+                                                                                value="{{$grupo->id}}">{{$grupo->nome}}</option>
+                                                                    @endforeach
+                                                                    {{-- <option selected="">Selecione a disciplina </option>
+                                                                     <option>Matemática</option>
+                                                                     <option>Historia</option>
+                                                                     <option>Geografia</option>
+                                                                     <option>Gramática</option>
+                                                                     <option>Inglês</option>
+                                                                     <option>Física</option>
+                                                                     <option>Química</option>
+                                                                     <option>Biologia</option>
+                                                                     <option>Filosofia</option>
+                                                                     <option>Sociologia</option>--}}
+                                                                </select>
+                                                              </div>
+                                                              <div class="material">
+                                                                  <select class="form-control">
+                                                                      <option selected="">Tipo de material</option>
+                                                                      <option>Trabalhos</option>
+                                                                      <option>Exercícios</option>
+                                                                      <option>Provas</option>
+                                                                  </select>
+                                                              </div>
+
+                                                              <div class="tags">
+                                                                asdasdasd
+                                                              </div>
+
+                                                              <div class="enviar">
+                                                                  <button type="button" class="btn btn-default mt-4">Salvar</button>
+
+                                                              </div>
+
+                                                        </div>
+                                                      
+                                                        </div>
+                                                          
+                      
                                                     </div>
+                                           
                                                   </div>
                                             </div>
+                                            
                                           </div>
                                           
                                           
@@ -393,7 +443,7 @@
                             </div>
                             
                           </div> -->
-                        </div>
+                      
                         <div class="col-3">
                           asdadsads
                         </div>

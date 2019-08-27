@@ -145,7 +145,7 @@
 
 
 }
-/* #fa-estrelas */
+/* motivação */
 #einstein {
 
 margin-top: 1px;
@@ -154,6 +154,55 @@ height: 95px;
 
 
 }
+
+/* escolha e material */
+
+.feed .btn-publicacao .questoes .form-group .material-disciplina {
+
+  padding-left: 24px;
+  padding-right: 24px;
+  
+
+
+}
+
+.feed .btn-publicacao .questoes .form-group .material-disciplina .material .form-control {
+
+  width: 42%;
+
+  
+}
+.feed .btn-publicacao .questoes .form-group .material-disciplina .disciplina .form-control {
+
+  width: 50%;
+  float: left;
+  margin-right: 10px;
+ 
+}
+.feed .btn-publicacao .questoes .form-group .material-disciplina .tags{
+
+  width: 93.5%;
+  
+  margin-right: 10px;
+ 
+}
+.feed .btn-publicacao .questoes .form-group .material-disciplina .enviar .btn{
+
+    width: 20%;
+    margin-top: 12px;
+    text-align: center;
+    background-color: rgb(90, 84, 173);
+    color: #fff;
+    margin-right: 10px;
+ 
+}
+
+
+
+
+
+
+
 
 
 
