@@ -86,19 +86,16 @@
 <div class="container">
                         <div class="row">
                                 <div class="col-3"> 
-                                        <div class="card">
-                                            <div class="name-foto">
-                                            <p class="welcome"><strong> Bem Vindo(a)</strong></p> 
-                                                <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" class="img-thumbnail ">
-                                    
-                                                <div class="name">
-                                                  <a class="" href="#">Cely</a> 
+                                        <div class="card perfil">
+                                                <div class="perfil-foto">
+                                                    <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" class="img-thumbnail">
                                                 </div>
-
-                                            </div>  
+                                            <P class="nome" href="#">Marcely Sastre</p> 
+                                            <a href="" class="apelido">@Celysastre</a>
+                                             
                                         </div>     
                                         <div class="navcard">
-                                                <div class="card">
+                                                <div class="card opcoes">
                                                         <div class="nav flex-column" aria-orientation="vertical" >
                                                             <a class="nav-link active" href="#"><i class="fas fa-rss-square mx-2"></i> Feed</a>
                                                             <a class="nav-link" href="pagina-grupo.html"><i class="fa fa-flag mx-2"></i>Páginas</a>
@@ -128,7 +125,7 @@
                                           </button>
                                         </div>
                                         <div class="modal-body">
-                                             <div class="card postagem"  id="blocks">
+                                             <!-- <div class="card postagem"  id="blocks">
                                               <div class="row">
                                                 <div class="col-6">
                                                     <div class="card arquivo"><a href="#">
@@ -164,14 +161,14 @@
                                                   </div>
                                                   
                                                 </div>
-                                            </div> 
+                                            </div>  -->
                                             
                                             
                                          
 
                                           <div class="row">
                                             <div class="col-12">
-                                                <div class="questoes" id="questoes" style="display:none" >
+                                                <div class="questoes" id="questoes" style="display:block" >
                                                     <div class="form-group">
                                                       <h5 class="mb-3 ml-4">Qual sua duvida?</h5>
                                                        <textarea></textarea>
@@ -445,7 +442,41 @@
                           </div> -->
                       
                         <div class="col-3">
-                          asdadsads
+                            <div class="card anuncio">
+                                <div class="header-anuncio">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="fecharAnuncio">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>                                   
+                                     <p class="anuncio-texto"> <i class="fas fa-bullhorn ml-1" id="alert"></i> Anúncio</p>
+                                </div>
+                                <div class="foto-anuncios">
+                                    <img src="https://66.media.tumblr.com/4887dd0783fa4b2e2fd934556f4cfd06/tumblr_onwdy23Wg71unxg2jo1_250.png" id="foto-anuncio">   
+                                </div>
+                                
+                                    <a class="nome-anuncio" href="">@celysastre professora de ingles</a>   
+                                    <div class="botao-contratar">
+                                        <button type="button" class="btn btn-sm btn-default">Contratar</button>
+                                    </div>                           
+                            </div>
+                            <div class="card progresso">
+                                <div class="progress blue">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">20%</div>
+                                </div>
+                                
+                                <div class="progresso-nome">
+                                  <p class="nivel">Nível: Iniciante</p>
+                                </div>                              
+                            </div>
+
+                            <div class="card raking-semanal">
+                              ada
+                            </div>
                         </div>
                         
                       </div>
@@ -464,18 +495,21 @@
 
 </body>
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
 
     <script type="text/javascript">
 
-      $(document).ready(function() {
-          $('#modalExemplo').modal('show');
-      })
+      // $(document).ready(function() {
+      //     $('#modalExemplo').modal('show');
+      // })
 
       function enviarquestoes() {
       var display = document.getElementById('questoes').style.display;        
