@@ -110,3 +110,10 @@ input[type="file"]{
 .editarperfil .form-group{max-width:280px;}
 .excluirperfil .form-group{max-width:280px;}
 
+.row .card .info a {
+    
+    color: rgb(90, 84, 173);
+
+}
+
+
