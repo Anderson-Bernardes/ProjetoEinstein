@@ -23,8 +23,12 @@
     
    
     background: url("https://66.media.tumblr.com/99370a732506ac7b78cf84902af645ce/tumblr_nfkfurnLhW1s75y9to10_1280.png");
-    background-size: cover;
     height: 210px;
+    background-size:100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -khtml-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
     
 }
 

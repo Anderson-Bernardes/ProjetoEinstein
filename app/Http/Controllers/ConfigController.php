@@ -15,6 +15,6 @@ class ConfigController extends Controller
     public function index()
     {
         $user=Auth::user();
-        return view('configuracoes', ['user'=>$user]);
+        return view('editar-usuario', ['user'=>$user]);
     }
 }

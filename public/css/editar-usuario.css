@@ -1,0 +1,112 @@
+.card-atualziar-foto {
+    
+    align-items: center;
+
+
+
+}
+
+
+.card-atualziar-foto .avatar  {
+
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  
+
+  
+}
+.card-atualziar-foto .avatar img {
+
+
+        
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    
+       
+
+
+  
+}
+input[type="file"]{
+    z-index: 999;
+    line-height: 0;
+    font-size: 0;
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity = 0);-ms-filter: "alpha(opacity=0)";
+    margin: 0;
+    padding:0;
+    left:0;
+}
+.uploadPhoto {
+    position: absolute;
+    top: 16%;
+    left: 25%;
+    display: none;
+    width: 50%;
+    height: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 86px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.card-atualziar-foto:hover .uploadPhoto { display: block; }
+
+.info {
+
+    padding: 12px;
+
+}
+
+.info .botao {
+
+    text-align: center;
+    margin-bottom:10%; 
+ 
+
+}
+.botao .btn{
+
+    text-align: center;
+    margin-bottom:10%; 
+    background-color: rgb(90, 84, 173);
+    color: #fff;
+
+}
+.editarperfil .botao .btn{
+
+    text-align: center;
+    margin-bottom:10%; 
+    background-color: rgb(90, 84, 173);
+
+}
+
+.editarperfil {
+
+    align-items: center;
+    padding-left: 100px; 
+    padding-right: 100px; 
+
+
+}
+.excluirperfil {
+
+    align-items: center;
+    padding-left: 100px; 
+    padding-right: 100px; 
+
+
+}
+
+.editarperfil .form-group{max-width:280px;}
+.excluirperfil .form-group{max-width:280px;}
+

@@ -16,7 +16,7 @@
 <header>
     <nav class="navbar navbar-icon-top navbar-expand-xl" style="background-color: rgb(90, 84, 173);">
         <div class="container">
-            <a class="navbar-brand  mx-1" href="#" style="color: rgb(255, 255, 255); font-weight: bold;">Einstein</a>
+            <a class="navbar-brand  mx-1" href="{{route('config')}}" style="color: rgb(255, 255, 255); font-weight: bold;">Einstein</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
