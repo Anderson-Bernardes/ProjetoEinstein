@@ -94,7 +94,14 @@
     <div class="row">
         <div class="col-3">
             <div class="card">
-                <div class="name-foto">
+            <div class="card perfil">
+                <div class="perfil-foto">
+                    <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" class="img-thumbnail">
+                </div>
+                    <P class="nome" href="#">Marcely Sastre</p> 
+                    <a href="" class="apelido">@Celysastre</a>                                            
+            </div>  
+                <!-- <div class="name-foto">
                     <p class="welcome"><strong> Bem Vindo(a)</strong></p>
                     @if($user->foto == 'null')
                         <img class="img-profile center-block"
@@ -104,20 +111,20 @@
                              src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="">
                     @endif
                     <a class="nomeusuario" href="{{route('userPerfil')}}">{{$user->name}}</a>
-                </div>
+                </div> -->
             </div>
             <div class="navcard">
-                <div class="card">
-                <div class="nav flex-column" aria-orientation="vertical" >
-                <a class="nav-link active" href="#"><i class="fas fa-rss-square mx-2"></i> Feed</a>
-                <a class="nav-link" href="pagina-grupo.html"><i class="fa fa-flag mx-2"></i>Páginas</a>
-                <a class="nav-link" href="#"><i class="fa fa-graduation-cap mx-2"></i>Material</a>
-                <a class="nav-link" href="#v-pills-amigos"><i class="fa fa-users mx-2"></i>Amigos</a>
-                <a class="nav-link" href="#v-pills-recomendacoes"><i class="fas fa-book-reader mx-2"></i>Recomendações</a>
-                <a class="nav-link" href="#v-pills-emblemas"><i class="fas fa-crown mx-2"></i>Emblemas</a>
-                </div>
-                </div>
-            </div>
+                <div class="card opcoes">
+                    <div class="nav flex-column" aria-orientation="vertical" >
+                        <a class="nav-link active" href="#"><i class="fas fa-rss-square mx-2"></i> Feed</a>
+                        <a class="nav-link" href="pagina-grupo.html"><i class="fa fa-flag mx-2"></i>Páginas</a>
+                        <a class="nav-link" href="#"><i class="fa fa-graduation-cap mx-2"></i>Material</a>
+                        <a class="nav-link" href="#v-pills-amigos"><i class="fa fa-users mx-2"></i>Amigos</a>
+                        <a class="nav-link" href="#v-pills-recomendacoes"><i class="fas fa-book-reader mx-2"></i>Recomendações</a>
+                        <a class="nav-link" href="#v-pills-emblemas"><i class="fas fa-crown mx-2"></i>Emblemas</a>
+                    </div>
+                 </div>
+            </div> 
         </div>
         <div class="col-9">
 
