@@ -245,7 +245,7 @@ height: 95px;
   margin-bottom: 0%;
 }
 
-
+/* anuncio */
 .anuncio .header-anuncio {
 
   background-color: #f3f3f7;
@@ -334,6 +334,8 @@ height: 95px;
   margin-right: 2px;
 
 }
+
+/* progresso usuário */
 
 .progresso {
 
@@ -429,33 +431,7 @@ height: 95px;
 .progress.blue .progress-left .progress-bar{
   animation: loading-2 1.5s linear forwards 1.8s;
 }
-.progress.yellow .progress-bar{
-  border-color: #fdba04;
-}
-.progress.yellow .progress-value{
-  color: #fdba04;
-}
-.progress.yellow .progress-left .progress-bar{
-  animation: loading-3 1s linear forwards 1.8s;
-}
-.progress.pink .progress-bar{
-  border-color: #ed687c;
-}
-.progress.pink .progress-value{
-  color: #ed687c;
-}
-.progress.pink .progress-left .progress-bar{
-  animation: loading-4 0.4s linear forwards 1.8s;
-}
-.progress.green .progress-bar{
-  border-color: #1abc9c;
-}
-.progress.green .progress-value{
-  color: #1abc9c;
-}
-.progress.green .progress-left .progress-bar{
-  animation: loading-5 1.2s linear forwards 1.8s;
-}
+
 @keyframes loading-1{
   0%{
       -webkit-transform: rotate(0deg);
@@ -511,6 +487,56 @@ height: 95px;
 }
 
 
+
+/* raking semanal */
+
+.raking-semanal .raking-geral p {
+  font-weight: 620;
+  color: #191919;
+  text-align: center;
+
+}
+
+.raking-semanal .usuarios-no-topo .foto-raking img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  width: 35px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: -4px;
+}
+.raking-semanal .usuarios-no-topo .nome-raking a {
+  color: #6c757d; 
+  font-size: 13.8px;
+  margin-top: 5px;
+  font-weight: 400;
+
+}
+.raking-semanal .usuarios-no-topo .pontos a {
+  font-weight: 600;
+  color: #191919;
+}
+
+
+
+/* botão de abrir pergunta */
+
+.feed .btn-publicacao .botao-abrir .btn {
+  background-color: rgb(90, 84, 173);
+  color: #fff;
+  
+
+}
+.feed .btn-publicacao .botao-abrir  {
+   text-align: center;
+   margin-bottom: 5%;
+
+
+
+}
 
 
 
