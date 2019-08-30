@@ -22,6 +22,7 @@ class UserController extends Controller
         $pc = new PostsController();
         $postagens = $pc->index();
         $user=Auth::user();
+        //print_r($postagens['postagens']);
         return view('perfil-usuario', ['user'=>$user, 'postagens'=> $postagens, 'amigos'=>$amigos]);
     }
 

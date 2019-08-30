@@ -32,8 +32,8 @@ class AmigosController extends Controller
         $dados = array( 'user_id'  => $id);
         $dadosEncoded = json_encode($dados);
 
-        //$url = "https://api-rede-einstein.herokuapp.com/api/amigo/getuseramigos";
-        $url = "localhost:8080/api/amigo/getuseramigos";
+        $url = "https://api-rede-einstein.herokuapp.com/api/amigo/getuseramigos";
+        //$url = "localhost:8080/api/amigo/getuseramigos";
         $authorization = "Authorization: Bearer ".Session::get('token');
 
         $ch = curl_init($url);

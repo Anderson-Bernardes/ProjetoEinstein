@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
         <title>Perfil</title>
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                         Perfil
                                     </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="{{route('config')}}>Configurações</a>
+                                        <a class="dropdown-item" href="{{route('config')}}">Configurações</a>
 
                                         <a href="{{route('logout')}}">Sair</a>
                                     </div>
@@ -55,10 +55,10 @@
                     </div>
                 </nav>
                 </header>
-                
+
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">                       
+                        <div class="col-md-3">
                     <div class="view-account">
                         <section class="module">
                             <div class="module-inner">
@@ -95,7 +95,7 @@
                             </div>
                         </section>
                     </div>
-                
+
                         </div>
                 <div class="col-md-6">
                     <div class="perfil-pagina-estudos">
@@ -106,7 +106,7 @@
                                     <p><strong>Idade: </strong> 22 </p>
                                     <p><strong>Escolaridade: </strong> Ensino médio</p>
                                     <p><strong>Emblemas: </strong>
-                                        <span class="emblemas">Iniciante</span> 
+                                        <span class="emblemas">Iniciante</span>
                                         <span class="emblemas">Aisten</span>
                                         <span class="emblemas">Professor</span>
                                         <span class="emblemas">RespondeTudo</span> <!-- no maximo 4 emblemas por perfil -emblemas + recentes -->
@@ -130,10 +130,10 @@
                                             </a>
                                             <a href="#">
                                                  <span class="fa fa-star-o"></span> <!-- estrela sem pintar! a metida que o usuario vai adquirindo pontos as estrelas vao pintando -->
-                                            </a> 
+                                            </a>
                                             </p>
                                         </figcaption>
-                                    </figure> 
+                                    </figure>
                                     </div>
                                     <hr>
                     </div>

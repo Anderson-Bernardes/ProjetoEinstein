@@ -96,22 +96,18 @@
             <div class="card">
             <div class="card perfil">
                 <div class="perfil-foto">
-                    <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" class="img-thumbnail">
-                </div>
-                    <P class="nome" href="#">Marcely Sastre</p> 
-                    <a href="" class="apelido">@Celysastre</a>                                            
-            </div>  
-                <!-- <div class="name-foto">
-                    <p class="welcome"><strong> Bem Vindo(a)</strong></p>
+                    <!--<img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" class="img-thumbnail">-->
                     @if($user->foto == 'null')
-                        <img class="img-profile center-block"
-                             src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="">
+                        <img class="img-thumbnail"
+                             src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="" >
                     @else
-                        <img class="img-profile img-thumbnail center-block"
+                        <img class="img-thumbnail"
                              src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="">
                     @endif
-                    <a class="nomeusuario" href="{{route('userPerfil')}}">{{$user->name}}</a>
-                </div> -->
+                </div>
+                    <P class="nome" href="#">{{$user->name}}</p>
+                    <a href="" class="apelido">{{$user->username}}</a>
+            </div>
             </div>
             <div class="navcard">
                 <div class="card opcoes">
@@ -124,7 +120,7 @@
                         <a class="nav-link" href="#v-pills-emblemas"><i class="fas fa-crown mx-2"></i>Emblemas</a>
                     </div>
                  </div>
-            </div> 
+            </div>
         </div>
         <div class="col-9">
 

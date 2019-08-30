@@ -27,8 +27,8 @@ class PostsController extends Controller
         $dados = array( 'user_id'  => $id);
         $dadosEncoded = json_encode($dados);
 
-        //$url = "https://api-rede-einstein.herokuapp.com/api/post/userPosts";
-        $url = "localhost:8080/api/post/userPosts";
+        $url = "https://api-rede-einstein.herokuapp.com/api/post/userPosts";
+        //$url = "localhost:8080/api/post/userPosts";
         $authorization = "Authorization: Bearer ".Session::get('token');
 
 
