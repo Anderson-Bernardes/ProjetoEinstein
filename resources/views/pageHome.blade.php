@@ -93,7 +93,7 @@
 <div class="container">
     <div class="row">
         <div class="col-3">
-            
+
             <div class="card perfil">
                 <div class="perfil-foto">
                     <!--<img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" class="img-thumbnail">-->
@@ -106,8 +106,8 @@
                     @endif
                 </div>
                     <P class="nome" href="#">{{$user->name}}</p>
-                    <a href="" class="apelido">{{$user->username}}</a>
-        
+                    <a href="{{route('userPerfil')}}" class="apelido">{{$user->username}}</a>
+
             </div>
             <div class="navcard">
                 <div class="card opcoes">
@@ -123,8 +123,8 @@
             </div>
         </div>
         <div class="col-6">
-        
-    
+
+
         </div>
 
         <div class="col-3">
@@ -138,10 +138,10 @@
                                     </span>
                                     <div class="progress-value">20%</div>
                                 </div>
-                                
+
                                 <div class="progresso-nome">
                                   <p class="nivel">Nível: Iniciante</p>
-                                </div>                              
+                                </div>
                             </div>
 
                             <div class="card raking-semanal">
@@ -161,7 +161,7 @@
                                       <p>185pts</p>
                                     </div>
                                   </div>
-                              
+
                             </div>
                             <div class="usuarios-no-topo">
                                 <div class="row">
@@ -175,7 +175,7 @@
                                       <p>10pts</p>
                                     </div>
                                   </div>
-                              
+
                             </div>
 
                             </div>
@@ -183,17 +183,17 @@
                               <div class="header-anuncio">
                                   <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="fecharAnuncio">
                                       <span aria-hidden="true">&times;</span>
-                                    </button>                                   
+                                    </button>
                                    <p class="anuncio-texto"> <i class="fas fa-bullhorn ml-1" id="alert"></i> Anúncio</p>
                               </div>
                               <div class="foto-anuncios">
-                                  <img src="https://66.media.tumblr.com/4887dd0783fa4b2e2fd934556f4cfd06/tumblr_onwdy23Wg71unxg2jo1_250.png" id="foto-anuncio">   
+                                  <img src="https://66.media.tumblr.com/4887dd0783fa4b2e2fd934556f4cfd06/tumblr_onwdy23Wg71unxg2jo1_250.png" id="foto-anuncio">
                               </div>
-                              
-                                  <a class="nome-anuncio" href="">@celysastre professora de ingles</a>   
+
+                                  <a class="nome-anuncio" href="">@celysastre professora de ingles</a>
                                   <div class="botao-contratar">
                                       <button type="button" class="btn btn-sm btn-default">Contratar</button>
-                                  </div>                           
+                                  </div>
                           </div>
                  </div>
 
@@ -486,7 +486,7 @@
                 </div>
 
             </div> -->
-        
+
     </div>
 </div>
 </body>
