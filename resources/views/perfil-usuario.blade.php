@@ -138,31 +138,6 @@
                                 @endif
                             </div>
                             @endforeach
-                            {{--<div class="amigos">
-                                <img
-                                    src="https://66.media.tumblr.com/b1843e9c97f0b2cc2398783f5571a224/5e5c8ae68d670e74-d8/s640x960/3d9f5e3d2b95035bc5979e230386ebadc75476b1.jpg"
-                                    class="imagem-amigo" alt="...">
-                            </div>
-                            <div class="amigos">
-                                <img
-                                    src="https://66.media.tumblr.com/864ea69f0c888f6c0f5e931c1587e029/tumblr_pu3ktz2qPB1uxg9roo3_400.jpg"
-                                    class="imagem-amigo" alt="...">
-                            </div>
-                            <div class="amigos">
-                                <img
-                                    src="https://66.media.tumblr.com/864ea69f0c888f6c0f5e931c1587e029/tumblr_pu3ktz2qPB1uxg9roo3_400.jpg"
-                                    class="imagem-amigo" alt="...">
-                            </div>
-                            <div class="amigos">
-                                <img
-                                    src="https://66.media.tumblr.com/864ea69f0c888f6c0f5e931c1587e029/tumblr_pu3ktz2qPB1uxg9roo3_400.jpg"
-                                    class="imagem-amigo" alt="...">
-                            </div>
-                            <div class="amigos">
-                                <img
-                                    src="https://66.media.tumblr.com/864ea69f0c888f6c0f5e931c1587e029/tumblr_pu3ktz2qPB1uxg9roo3_400.jpg"
-                                    class="imagem-amigo" alt="...">
-                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -209,12 +184,12 @@
                                                     <img id="img-feed-grupo"
                                                          src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="...">
                                                 @endif
-                                                <a href=""><p>{{$user->username}}</p></a>
+                                                <a href="#"><p>{{$user->username}}</p></a>
                                                 <div class="opcoes"><a href=""><h3>...</h3></a></div>
                                             </div>
                                             <div class="publicacao-feed-texto">
                                                 <div class="titulo">
-                                                    <h6>Matemática Básica</h6>
+                                                    <h6>{{$post['titulo']}}</h6>
                                                 </div>
                                                 <p>{{$post['texto']}}
                                                 </p>
@@ -228,7 +203,7 @@
                                             </div>
                                             <hr>
                                             <div class="foster">
-                                                <a><p><i class="far fa-thumbs-up  ml-1 "></i> 145 </p></a>
+                                                <a><p><i class="far fa-thumbs-up  ml-1 "></i> {{$post['qtd_likes']}} </p></a>
                                                 <a><p><i class="fas fa-share-square  ml-1"></i> 123</p></a>
                                                 <div class="foster-resolver">
                                                     <a href="" id="direito"><p><i class="fas fa-feather-alt"></i>
@@ -240,78 +215,6 @@
                                             </div>
                                         </div>
                                         @endforeach
-                                    {{--    <div class="card card-publicao">
-                                            <div class="foto-usuario-grupo">
-                                                <img
-                                                    src="https://66.media.tumblr.com/50d8edbe01db286bcc42c8ea2de0e381/tumblr_pu3c6pPYE41y9ujooo5_500.png"
-                                                    id="img-feed-grupo" alt="...">
-                                                <a href=""><p>@CelySastre</p></a>
-                                                <div class="opcoes"><a href=""><h3>...</h3></a></div>
-                                            </div>
-                                            <div class="publicacao-feed-texto">
-                                                <div class="titulo">
-                                                    <h6>Matemática Básica</h6>
-                                                </div>
-                                                <p>Matemática matemática matemática matemática 23-(2+8)-7​
-                                                </p>
-                                                <div class="tags">
-                                                    <a href=""><p>#Matemática</a>
-                                                    <a href=""><p>#Exercicio</a>
-                                                    <a href=""><p>#Matemática</a>
-                                                    <a href=""><p>#Exercicio</a>
-                                                    <a href=""><p>#Exercicio</a>
-
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="foster">
-                                                <a><p><i class="far fa-thumbs-up  ml-1 "></i> 145 </p></a>
-                                                <a><p><i class="fas fa-share-square  ml-1"></i> 123</p></a>
-                                                <div class="foster-resolver">
-                                                    <a href="" id="direito"><p><i class="fas fa-feather-alt"></i>
-                                                            resolver </p></a>
-                                                </div>
-                                                <div class="status">
-                                                    <h5><i class="far fa-question-circle"></i></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card card-publicao">
-                                            <div class="foto-usuario-grupo">
-                                                <img
-                                                    src="https://66.media.tumblr.com/50d8edbe01db286bcc42c8ea2de0e381/tumblr_pu3c6pPYE41y9ujooo5_500.png"
-                                                    id="img-feed-grupo" alt="...">
-                                                <a href=""><p>@CelySastre</p></a>
-                                                <div class="opcoes"><a href=""><h3>...</h3></a></div>
-                                            </div>
-
-                                            <div class="publicacao-feed-texto">
-                                                <div class="titulo">
-                                                    <h6>Matemática Básica</h6>
-                                                </div>
-                                                <p>Matemática matemática matemática matemática 23-(2+8)-7​
-                                                </p>
-                                                <div class="tags">
-                                                    <a href=""><p>#Matemática</a>
-                                                    <a href=""><p>#Exercicio</a>
-                                                    <a href=""><p>#Matemática</a>
-                                                    <a href=""><p>#Exercicio</a>
-                                                    <a href=""><p>#Exercicio</a>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="foster">
-                                                <a><p><i class="far fa-thumbs-up  ml-1 "></i> 145 </p></a>
-                                                <a><p><i class="fas fa-share-square  ml-1"></i> 123</p></a>
-                                                <div class="foster-resolver">
-                                                    <a href="" id="direito"><p><i class="fas fa-feather-alt"></i>
-                                                            resolver </p></a>
-                                                </div>
-                                                <div class="status">
-                                                    <h5><i class="far fa-question-circle"></i></h5>
-                                                </div>
-                                            </div>
-                                        </div>--}}
                                     </div>
                                     <div class="tab-pane fade show active" id="grupos" role="tabpanel"
                                          aria-labelledby="grupos-tab">
