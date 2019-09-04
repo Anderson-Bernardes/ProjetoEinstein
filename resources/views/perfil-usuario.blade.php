@@ -110,7 +110,7 @@
                     <div class="nome-usuario">
                         <h6><strong>{{$user->name}}</strong></h6>
                         <a href=""><p class="card-text"><small class="text-muted">{{$user->username}}</small></p></a>
-                        <a><p><small><i class="fas fa-graduation-cap"></i> Estudante</small></p></a>
+                        <a><p><small><i class="fas fa-graduation-cap"></i> Iniciante I</small></p></a>
                         <a><p class="card-text"><small><i class="fas fa-map-marker-alt"></i> Minas Gerais,
                                     Brazil</small></p></a>
                     </div>
@@ -152,7 +152,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active" id="grupos-tab" data-toggle="tab" role="tab"
-                                           aria-controls="grupos" aria-selected="false" href="#grupos">Páginas</a>
+                                           aria-controls="grupos" aria-selected="false" href="#grupos">Grupos</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="images-tab" data-toggle="tab" role="tab"
@@ -160,7 +160,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="images-tab" data-toggle="tab" role="tab"
-                                           aria-controls="images" aria-selected="false" href="#">Video Aulas</a>
+                                           aria-controls="images" aria-selected="false" href="#">Cursos</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="images-tab" data-toggle="tab" role="tab"

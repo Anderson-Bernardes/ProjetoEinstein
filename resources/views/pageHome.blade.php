@@ -112,9 +112,9 @@
             <div class="navcard">
                 <div class="card opcoes">
                     <div class="nav flex-column" aria-orientation="vertical" >
-                        <a class="nav-link active" href="#"><i class="fas fa-rss-square mx-2"></i> Feed</a>
-                        <a class="nav-link" href="pagina-grupo.html"><i class="fa fa-flag mx-2"></i>Páginas</a>
-                        <a class="nav-link" href="#"><i class="fa fa-graduation-cap mx-2"></i>Material</a>
+                        <a class="nav-link active" href="#"><i class="fas fa-rss-square mx-2"></i> Inicial</a>
+                        <a class="nav-link" href="pagina-grupo.html"><i class="fa fa-flag mx-2"></i>Grupos</a>
+                        <a class="nav-link" href="#"><i class="fa fa-graduation-cap mx-2"></i>Cursos</a>
                         <a class="nav-link" href="#v-pills-amigos"><i class="fa fa-users mx-2"></i>Amigos</a>
                         <a class="nav-link" href="#v-pills-recomendacoes"><i class="fas fa-book-reader mx-2"></i>Recomendações</a>
                         <a class="nav-link" href="#v-pills-emblemas"><i class="fas fa-crown mx-2"></i>Emblemas</a>
@@ -146,7 +146,7 @@
 
                             <div class="card raking-semanal">
                               <div class="raking-geral">
-                                <p> <i class="fas fa-crown mx-2 mt-3"  style="color: rgb(255,215,0);"></i>Ranking Semanal</a> </p>
+                                <p> <i class="fas fa-crown mx-2 mt-3"  style="color: rgb(255,215,0);"></i>Ranking Geral</a> </p>
                                 <hr>
                             </div>
                             <div class="usuarios-no-topo">
@@ -158,7 +158,7 @@
                                       <a href="#">@1234567890</a>
                                     </div>
                                     <div class="pontos col-4">
-                                      <p>185pts</p>
+                                      <p>Iniciante I</p>
                                     </div>
                                   </div>
 
@@ -179,22 +179,6 @@
                             </div>
 
                             </div>
-                            <div class="card anuncio">
-                              <div class="header-anuncio">
-                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="fecharAnuncio">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                   <p class="anuncio-texto"> <i class="fas fa-bullhorn ml-1" id="alert"></i> Anúncio</p>
-                              </div>
-                              <div class="foto-anuncios">
-                                  <img src="https://66.media.tumblr.com/4887dd0783fa4b2e2fd934556f4cfd06/tumblr_onwdy23Wg71unxg2jo1_250.png" id="foto-anuncio">
-                              </div>
-
-                                  <a class="nome-anuncio" href="">@celysastre professora de ingles</a>
-                                  <div class="botao-contratar">
-                                      <button type="button" class="btn btn-sm btn-default">Contratar</button>
-                                  </div>
-                          </div>
                  </div>
 
 
