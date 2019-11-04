@@ -123,6 +123,138 @@
             </div>
         </div>
         <div class="col-6">
+        <div class="card feed">
+
+<div class="btn-publicacao" >
+    <!-- Botão para acionar modal -->
+    <div class="botao-abrir mt-3">
+        <button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#modalExemplo">
+            Criar publicação
+          </button>
+    </div>
+
+      <!-- Modal -->
+      <div class="modal fade  bd-example-modal-lg" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header" >
+              <h5 class="titulo" >Conhecimento é para ser compartilhado <i class="fas fa-book-open"></i></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <div class="card postagem"  id="blocks">
+                  <div class="row">
+                    <div class="col-12">
+                        <div class="card arquivo"><a href="#">
+                            <p class="texto">COMPARTILHE SEUS MATERIAIS E DÚVIDAS</p>
+                            <button type="button" class="btn btn-default" onclick="enviarquestoes(), enviarduvida()"  style="background-color: rgb(90, 84, 173, 0.8); color: #fff;">Enviar material</button>
+                            </a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="card-footer mt-3">
+                      <div class="row">
+                        <div class="col-4">
+                            <img src="https://icon-icons.com/icons2/1736/PNG/96/4043274-avatar-einstein-professor-scientist_113259.png" id="einstein">
+                            <p class="einstein" style="color: #6c757d;">Não existem ideias más, sem erro não há crescimento.</p>
+
+                        </div>
+                        <div class="col-4">
+                            <img src="https://image.flaticon.com/icons/svg/827/827486.svg" id="einstein">
+                            <p class="einstein" style="color: #6c757d;">Ciência é uma equação diferencial.</p>
+
+                        </div>
+                        <div class="col-4">
+                            <img src="https://image.flaticon.com/icons/svg/1995/1995574.svg" id="einstein">
+                            <p class="einstein" style="color: #6c757d;">Feliz aquele que transfere o que sabe e aprende o que ensina.</p>                                                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+              <div class="row">
+                <div class="col-12">
+                    <div class="questoes" id="questoes" style="display:none" >
+                        <div class="form-group">
+                        <form id="editor1">
+                <label for="editor1">Editor 1</label>
+                <textarea name="editor1" id="editor1" rows="10" cols="80">
+
+            </textarea>
+                <script>
+                    // Replace the <textarea id="editor1"> with a CKEditor
+                    // instance, using default configuration.
+                    CKEDITOR.replace( 'editor1',{
+                    extraPlugins: 'mathjax',
+                        mathJaxLib: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML',
+                        height: 320});
+                </script>
+            </form>
+                            <div class="material-disciplina">
+                                <div class="disciplina">
+                                    <select name="grupo" class="form-control">
+                                        <option selected="">Escolha um grupo para enviar sua
+                                            pergunta
+                                        </option>
+                                        @foreach($grupos as $grupo)
+                                            <option name="{{$grupo->nome}}"
+                                                    value="{{$grupo->id}}">{{$grupo->nome}}</option>
+                                        @endforeach
+                                        {{-- <option selected="">Selecione a disciplina </option>
+                                         <option>Matemática</option>
+                                         <option>Historia</option>
+                                         <option>Geografia</option>
+                                         <option>Gramática</option>
+                                         <option>Inglês</option>
+                                         <option>Física</option>
+                                         <option>Química</option>
+                                         <option>Biologia</option>
+                                         <option>Filosofia</option>
+                                         <option>Sociologia</option>--}}
+                                    </select>
+                                  </div>
+                                  <div class="material">
+                                      <select class="form-control">
+                                          <option selected="">Tipo de material</option>
+                                          <option>Trabalhos</option>
+                                          <option>Exercícios</option>
+                                          <option>Provas</option>
+                                      </select>
+                                  </div>
+
+
+                                  <div class="enviar">
+                                      <button type="button" class="btn btn-default mt-4">Enviar</button>
+
+                                  </div>
+
+                            </div>
+
+                            </div>
+
+
+                        </div>
+
+                      </div>
+                </div>
+
+              </div>
+
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+</div>
 
 
         </div>
@@ -181,7 +313,7 @@
                             </div>
                  </div>
 
-<!-- 
+<!--
             <form id="editor1">
                 <label for="editor1">Editor 1</label>
                 <textarea name="editor1" id="editor1" rows="10" cols="80">
@@ -198,7 +330,7 @@
             </form> -->
 
 
-          
+
 
     </div>
 </div>
@@ -216,5 +348,30 @@
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
       integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script type="text/javascript">
+
+// $(document).ready(function() {
+//     $('#modalExemplo').modal('show');
+// })
+
+function enviarquestoes() {
+var display = document.getElementById('questoes').style.display;
+if (display == "none")
+document.getElementById('questoes').style.display = 'block';
+else
+document.getElementById('questoes').style.display = 'none';
+                         }
+function enviarduvida() {
+var display = document.getElementById('blocks').style.display;
+if (display == "block")
+document.getElementById('blocks').style.display = 'none';
+else
+document.getElementById('blocks').style.display = 'none';
+                      }
+
+
+
+</script>
 
 </html>

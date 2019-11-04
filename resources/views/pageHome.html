@@ -109,9 +109,6 @@
                                      </div>
                         <div class="col-6">
                          <div class="card feed">
-                                  <div class="criar-publicacao">
-                                        <h5 class="mt-2" style="text-align: center"> Criar publicação</h5>
-                                  </div>
 
                             <div class="btn-publicacao" >
                                 <!-- Botão para acionar modal -->
@@ -136,12 +133,12 @@
                                               <div class="row">
                                                 <div class="col-12">
                                                     <div class="card arquivo"><a href="#">
-                                                        <p class="texto">COMPARTILHE SEUS MATERIAIS E DUVIDAS</p>
+                                                        <p class="texto">COMPARTILHE SEUS MATERIAIS E DÚVIDAS</p>
                                                         <button type="button" class="btn btn-default" onclick="enviarquestoes(), enviarduvida()"  style="background-color: rgb(90, 84, 173, 0.8); color: #fff;">Enviar material</button>
                                                         </a>
                                                     </div>
                                                   </div>
-                                            
+
                                                 </div>
                                                 <div class="card-footer mt-3">
                                                   <div class="row">
@@ -162,13 +159,12 @@
                                                   </div>
 
                                                 </div>
-                                            </div>  
+                                            </div>
 
                                           <div class="row">
                                             <div class="col-12">
                                                 <div class="questoes" id="questoes" style="display:none" >
                                                     <div class="form-group">
-                                                      <h5 class="mb-3 ml-4">Qual sua duvida?</h5>
                                                        <textarea></textarea>
                                                         <div class="material-disciplina">
                                                             <div class="disciplina">
@@ -202,12 +198,9 @@
                                                                   </select>
                                                               </div>
 
-                                                              <div class="tags">
-                                                                asdasdasd
-                                                              </div>
 
                                                               <div class="enviar">
-                                                                  <button type="button" class="btn btn-default mt-4">Salvar</button>
+                                                                  <button type="button" class="btn btn-default mt-4">Enviar</button>
 
                                                               </div>
 
@@ -449,7 +442,7 @@
                                     <span class="progress-right">
                                         <span class="progress-bar"></span>
                                     </span>
-                                    <div class="progress-value">20%</div>
+                                    <div class="progress-value">80%</div>
                                 </div>
 
                                 <div class="progresso-nome">
@@ -492,22 +485,7 @@
                             </div>
 
                             </div>
-                            <div class="card anuncio">
-                              <div class="header-anuncio">
-                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="fecharAnuncio">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                   <p class="anuncio-texto"> <i class="fas fa-bullhorn ml-1" id="alert"></i> Anúncio</p>
-                              </div>
-                              <div class="foto-anuncios">
-                                  <img src="https://66.media.tumblr.com/4887dd0783fa4b2e2fd934556f4cfd06/tumblr_onwdy23Wg71unxg2jo1_250.png" id="foto-anuncio">
-                              </div>
 
-                                  <a class="nome-anuncio" href="">@celysastre professora de ingles</a>
-                                  <div class="botao-contratar">
-                                      <button type="button" class="btn btn-sm btn-default">Contratar</button>
-                                  </div>
-                          </div>
                         </div>
 
                       </div>
@@ -548,14 +526,14 @@
       document.getElementById('questoes').style.display = 'block';
       else
       document.getElementById('questoes').style.display = 'none';
-}
+                               }
       function enviarduvida() {
       var display = document.getElementById('blocks').style.display;
       if (display == "block")
       document.getElementById('blocks').style.display = 'none';
       else
       document.getElementById('blocks').style.display = 'none';
-}
+                            }
 
 
 
