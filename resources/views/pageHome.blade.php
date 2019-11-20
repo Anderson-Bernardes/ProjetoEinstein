@@ -118,7 +118,7 @@
                         <a class="nav-link" href="pagina-grupo.html"><i class="fa fa-flag mx-2"></i>Grupos</a>
                         <a class="nav-link" href="#"><i class="fa fa-graduation-cap mx-2"></i>Cursos</a>
                         <a class="nav-link" href="#v-pills-amigos"><i class="fa fa-users mx-2"></i>Amigos</a>
-                        <a class="nav-link" href="#v-pills-recomendacoes"><i class="fas fa-book-reader mx-2"></i>Recomendações</a>
+                        <a class="nav-link" href="{{route("config")}}"><i class="fas fa-book-reader mx-2"></i>Configurações</a>
                         <a class="nav-link" href="#v-pills-emblemas"><i class="fas fa-crown mx-2"></i>Emblemas</a>
                     </div>
                 </div>
