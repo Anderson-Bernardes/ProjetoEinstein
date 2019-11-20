@@ -31,7 +31,9 @@ class HomeController extends Controller
         $grupos=$ct->GetGrupos();
         //var_dump($grupos);
         $user=Auth::user();
-        return view('pageHome', ['user'=>$user], ['grupos'=>$grupos]);
+        $pc = new PostsController();
+        $postagens = $pc->index();
+        return view('pageHome', ['user'=>$user, 'postagens'=>$postagens], ['grupos'=>$grupos]);
     }
 
 }

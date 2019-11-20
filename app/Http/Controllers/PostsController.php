@@ -105,12 +105,14 @@ class PostsController extends Controller
 
             $result = curl_exec($ch);
             $retorno = json_decode($result, true);
+            print_r($retorno);
 
             if($retorno['status'] == 1)
                 return redirect()->back()->with('success', 'Post Criado Com sucesso');
             else
                 return redirect()->back()->with('error', 'Falha ao criar a postagem');
         }
+
         return redirect()->back()->with('error', 'Parametros não encontrados');
     }
 
