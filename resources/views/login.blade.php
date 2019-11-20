@@ -87,14 +87,7 @@
 <div class="container">
     <div class="row">
         <div class="col-6">
-            <div class="descricao-site">
-                <h3 class="fonte"> Bem-vindo ao Einstein</h3>
-                <div class="descricao-einstein">
-
-
-                </div>
-
-            </div>
+           
         </div>
         <div class="col-6">
             <div class="CadastroIndex">

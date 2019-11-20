@@ -16,7 +16,7 @@
 <header>
     <nav class="navbar navbar-icon-top navbar-expand-xl" style="background-color: rgb(90, 84, 173);">
         <div class="container">
-            <a class="navbar-brand  mx-1" href="{{route('home')}}" style="color: rgb(255, 255, 255); font-weight: bold;">Einstein</a>
+            <a class="navbar-brand  mx-1" href="" style="color: rgb(255, 255, 255); font-weight: bold;">Einstein</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -75,16 +75,16 @@
 
                         </a>
                         <a class="nav-link" href="#">
-                            {{--<img
+                           <img
                                 src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D"
-                                id="image" alt="">--}}
-                            @if($user->foto == 'null')
+                                id="image" alt="">
+                          
                                 <img class="img-profile center-block"
-                                     src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="" id="image">
-                            @else
+                                     src="" alt="" id="image">
+                          
                                 <img class="img-profile img-thumbnail center-block"
-                                     src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="" id="image">
-                            @endif
+                                     src="" alt="" id="image">
+                          
                         </a>
                     </li>
 
@@ -102,18 +102,17 @@
         <div class="col-3">
             <div class="card card-atualziar-foto">
                 <div class="avatar">
-                    <!--<img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avt img-thumbnail " alt="">-->
-                    @if($user->foto == 'null')
+               <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avt img-thumbnail " alt="">
                         <img class="avt img-thumbnail"
-                             src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="" >
-                    @else
+                             src="" alt="" >
+               
                         <img class="avt img-thumbnail"
-                             src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="">
-                    @endif
+                             src="" alt="">
+                  
                 </div>
 
-                <form action="{{route('updateFotoUser')}}" method="post" enctype="multipart/form-data">
-                    {{csrf_field()}}
+                <form action="" method="post" enctype="">
+                    
                 <div class="custom-input-file">
                     <label class="uploadPhoto">
                         <spam style="font-size: 30px"><i class="fas fa-camera "></i></spam>
@@ -129,26 +128,14 @@
             <div class="card cardinfo">
                 <div class="info">
                     <p class="mt-2" style="text-align: center;">Editar perfil</p>
-                    <input class="form-control form-control mt-2" type="text" placeholder="Nome" value="{{$user->name}}">
-                    <input class="form-control form-control mt-2" type="text" placeholder="@Apelido" value="{{$user->username}}">
-                   {{-- <select class="custom-select mt-2" id="inlineFormCustomSelectPref">
+                    <input class="form-control form-control mt-2" type="text" placeholder="Nome" value="">
+                    <input class="form-control form-control mt-2" type="text" placeholder="@Apelido" value="">
+                 <select class="custom-select mt-2" id="inlineFormCustomSelectPref">
                         <option selected value="1">Estudante</option>
                         <option value="2">Professor</option>
-                    </select>--}}
-                    <select class="custom-select mt-2" id="inlineFormCustomSelectPref" name="categoria">
-                        <option value="Aluno"
-                                @if($user->categoria=='Aluno')
-                                selected
-                            @endif
-                        >Aluno
-                        </option>
-                        <option value="Professor"
-                                @if($user->categoria=='Professor')
-                                selected
-                            @endif
-                        >
-                            Professor(a)
-                        </option>
+                    </select><select class="custom-select mt-2" id="inlineFormCustomSelectPref" name="categoria">
+                        <option value="Aluno" </option>
+                        <option value="Professor"</option>
                     </select>
                     <div class="panel-group mt-3" style="text-align: center;">
                         <a data-toggle="collapse" href="#collapse1" style="text-decoration: none;">Aniversário</a>
@@ -158,10 +145,9 @@
                                     <div class="col-6">
                                         <select class="custom-select" id="inlineFormCustomSelect">
                                             <option selected>Dia</option>
-                                            @for($i=1; $i<=31; $i++)
-                                                <option value="{{$i}}">{{$i}}</option>
-                                            @endfor
-                                            {{--<option value="1">1</option>
+                                         
+                                                <option value="{{$i}}"></option>
+                                            <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                             <option value="4">4</option>
@@ -191,17 +177,16 @@
                                             <option value="28">28</option>
                                             <option value="29">29</option>
                                             <option value="30">30</option>
-                                            <option value="31">31</option>--}}
+                                            <option value="31">31</option>
 
                                         </select>
                                     </div>
                                     <div class="col-6">
                                         <select class="custom-select" id="inlineFormCustomSelect">
                                             <option selected>Ano</option>
-                                            @for($j=2019; $j>=1970; $j--)
+                                     
                                                 <option value="{{$j}}">{{$j}}</option>
-                                            @endfor
-                                            {{--<option value="2019">2019</option>
+                                           <option value="2019">2019</option>
                                             <option value="2018">2018</option>
                                             <option value="2017">2017</option>
                                             <option value="2016">2016</option>
@@ -319,7 +304,7 @@
                                             <option value="1904">1904</option>
                                             <option value="1903">1903</option>
                                             <option value="1902">1902</option>
-                                            <option value="1901">1901</option>--}}
+                                            <option value="1901">1901</option>
                                         </select>
                                     </div>
                                 </div>
@@ -364,7 +349,7 @@
                         <div class="form-group">
                             <label for="disabledTextInput">E-mail:</label>
                             <input type="text" id="disabledTextInput" class="form-control"
-                                   placeholder="Celysastre@hotmail.com" value="{{$user->email}}">
+                                   placeholder="Celysastre@hotmail.com" value="">
                         </div>
                     </fieldset>
                     <div class="form-group">
@@ -373,15 +358,8 @@
                             <!--<option value="nd"></option>-->
                             <option value="NE" selected>Não identificar</option>
                             <option value="fem"
-                            @if($user->sexo=='F')
-                                selected
-                                @endif
-                            >Feminino</option>
-                            <option value="masc"
-                            @if($user->sexo == 'M')
-                                selected
-                                @endif
-                                >Masculino</option>
+                         </option>
+                            <option value="masc" </option>
 
                         </select>
                     </div>
