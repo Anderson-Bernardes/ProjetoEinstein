@@ -17,7 +17,7 @@
 <header>
     <nav class="navbar navbar-icon-top navbar-expand-xl" style="background-color: rgb(90, 84, 173);">
         <div class="container">
-            <a class="navbar-brand  mx-1" href="{{route('config')}}"
+            <a class="navbar-brand  mx-1" href="{{route('home')}}"
                style="color: rgb(255, 255, 255); font-weight: bold;">Einstein</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -114,8 +114,8 @@
             <div class="navcard">
                 <div class="card opcoes">
                     <div class="nav flex-column" aria-orientation="vertical">
-                        <a class="nav-link active" href="#"><i class="fas fa-rss-square mx-2"></i> Inicial</a>
-                        <a class="nav-link" href="pagina-grupo.html"><i class="fa fa-flag mx-2"></i>Grupos</a>
+                        <a class="nav-link active" href="{{route("home")}}"><i class="fas fa-rss-square mx-2"></i> Inicial</a>
+                        <a class="nav-link" href="{{route("grupos")}}"><i class="fa fa-flag mx-2"></i>Grupos</a>
                         <a class="nav-link" href="#"><i class="fa fa-graduation-cap mx-2"></i>Cursos</a>
                         <a class="nav-link" href="#v-pills-amigos"><i class="fa fa-users mx-2"></i>Amigos</a>
                         <a class="nav-link" href="{{route("config")}}"><i class="fas fa-book-reader mx-2"></i>Configurações</a>
@@ -172,7 +172,7 @@
                                                 <div class="col-4">
                                                     <img
                                                         src="https://icon-icons.com/icons2/1736/PNG/96/4043274-avatar-einstein-professor-scientist_113259.png"
-                                                        id="einstein" alt="">
+                                                        id="einstein">
                                                     <p class="einstein" style="color: #6c757d;">Não existem ideias más,
                                                         sem erro não há crescimento.</p>
 

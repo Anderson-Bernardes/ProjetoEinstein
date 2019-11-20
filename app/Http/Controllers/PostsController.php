@@ -68,7 +68,7 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        if(isset($request['grupo']) && (isset($request['texto']) || ($request->hasFile('imagem') && $request->file('imagem')->isValid()))){
+        if(isset($request['titulo']) || isset($request['grupo']) && (isset($request['texto']) || ($request->hasFile('imagem') && $request->file('imagem')->isValid()))){
             date_default_timezone_set('America/Sao_Paulo');
             $user = Auth::user();
 
@@ -81,6 +81,7 @@ class PostsController extends Controller
                 $imagem = $request['imagem'];
             else
                 $imagem = null;
+
 
             $id = strval($user->getAuthIdentifier());
 
