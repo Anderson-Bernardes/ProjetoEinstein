@@ -254,3 +254,9 @@
     .media-left{
       display: inline-block;
     }
+
+    .card .mid {
+
+      padding: 40%;
+    
+    }
