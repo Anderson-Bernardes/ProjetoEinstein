@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/pagina-grupo.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/pagina-grupo.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/pagina-grupo-2.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
 
 
@@ -178,7 +179,7 @@
                                                    <hr>
                                                    <div class="foster">
                                                       <a><p><i class="far fa-thumbs-up  ml-1 "  ></i> 145 </p></a>
-                                                      <a><p><i class="fas fa-share-square  ml-1"></i> 123 </a>
+                                                  
                                                         <div class="foster-resolver">
                                                         <a href="" id="direito"><p><i class="fas fa-feather-alt"></i></i> resolver </a>
 
@@ -204,7 +205,7 @@
                                             <div class="col-6">
                                                 <div class="card cardpost">
                                                     <div class="foto-usuario-grupo">
-                                                     <img src="https://66.media.tumblr.com/072ed1e88093445cf9bce1ce7eda5051/tumblr_pdofwwp1vx1xwj3nzo1_500.jpg" id="img-feed-grupo" alt="...">
+                                                     <img src="https://66.media.tumblr.com/1014660c32a3bbee4ab168136e6ac17b/f23b757ae3470152-a6/s250x400/c007d745ae83afb166b973de2ee22a24df67d51e.png" id="img-feed-grupo" alt="...">
                                                           <a href=""><p>@CelySastre</p></a>
                                                           <div class="opcoes"><a href=""><h3>...</h3></a></div>
                                                    </div>
@@ -235,7 +236,7 @@
                                                    <hr>
                                                    <div class="foster">
                                                       <a><p><i class="far fa-thumbs-up  ml-1 "  ></i> 145 </p></a>
-                                                      <a><p><i class="fas fa-share-square  ml-1"></i> 123 </a>
+                                                  
                                                         <div class="foster-resolver">
                                                         <a href="" id="direito"><p><i class="fas fa-feather-alt"></i></i> resolver </a>
 
