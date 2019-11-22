@@ -1,4 +1,4 @@
-.corpo{
+/* .corpo{
     margin-top: 4px;
 }
 
@@ -12,12 +12,12 @@
     border-radius: .25rem;
 
 
-}
-.corpo .capa .cardcapa .capa-imagem
+} */
+/* .corpo .capa .cardcapa .capa-imagem
 {
     max-width: 100%;
     max-height: 170px;
-}
+} */
 
 #img-grupo{
 
@@ -42,13 +42,13 @@
 
 }
 
-.corpo .avatar-feed {
+/* .avatar-feed {
     max-width: 85%;
     margin: 0 auto;
 
-}
+} */
 
-.avatar-feed .nome-da-pagina  {
+/* .avatar-feed .nome-da-pagina  {
 
     margin-top: 32px;
     margin-left: 2px;
@@ -61,8 +61,8 @@
 color: #3db0f7;
 
 
-}
-.avatar-feed .nome-da-pagina h5 {
+/* } */
+/* .avatar-feed .nome-da-pagina h5 {
 
    margin: 0;
    
@@ -71,13 +71,13 @@ color: #3db0f7;
 
     margin: 0;
    
-}
+} */ */
 
 
 /* nome e usuario/*
 /*meio /*
 */
-.row .card {
+.row .card .cardpost {
 
     margin-top: 15px;
     position: relative;
@@ -103,15 +103,15 @@ color: #3db0f7;
   
   }
 
-  .avatar-feed .info-grupo{
+ /* .avatar-feed .info-grupo{
 
-    margin-top: 32px;
+    margin-top: 50px;
 
-  }
+  } */
 
   /* nome Teste desse carai  /*
 */
-.nav {
+.cardpost .nav {
     
     display: flex;
     -ms-flex-wrap: wrap;
@@ -198,19 +198,19 @@ color: #3db0f7;
 */
 
 
-.corpo .feed-de-grupo  {
+.cardpost .feed-de-grupo  {
 
     max-width: 85%;
     margin: 0 auto;
 
 }
-.corpo .feed-de-grupo .foto-usuario-grupo {
+.cardpost .feed-de-grupo .foto-usuario-grupo {
 
     margin-left: 25px;
     margin-top: 8px;
 
 }
-.corpo .feed-de-grupo .foto-usuario-grupo a>p {
+.cardpost .feed-de-grupo .foto-usuario-grupo a>p {
     margin-top: 19px;
     /* margin-left: -28px; */
     float: left;
@@ -225,7 +225,7 @@ color: #3db0f7;
 
 
 
-.corpo .feed-de-grupo .foto-usuario-grupo .opcoes a {
+.cardpost .feed-de-grupo .foto-usuario-grupo .opcoes a {
    
      
             color: #6c757d;
@@ -236,7 +236,7 @@ color: #3db0f7;
 
         
 }
-.corpo .feed-de-grupo .foto-usuario-grupo .opcoes a:hover {
+.cardpost .feed-de-grupo .foto-usuario-grupo .opcoes a:hover {
    
     color: rgb(90, 84, 173);
             

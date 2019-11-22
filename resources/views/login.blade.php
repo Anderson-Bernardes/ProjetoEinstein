@@ -18,7 +18,11 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+               
             </button>
+            <img src="https://img.icons8.com/cotton/90/000000/owl--v2.png" style=" margin-left: 25%; ">
+        
+           
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">

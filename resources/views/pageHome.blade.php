@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/homee.css">
     <link rel="stylesheet" type="text/css" href="css/paginaConfig.css">
+    <link rel="stylesheet" type="text/css" href="css/pagina-grupo.css">
 
     <!--script type="text/javascript" src="js/feed.js"></script>-->
     <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
@@ -283,16 +284,50 @@
 
 
 
+            <div class="card cardpost">
+                                                    <div class="foto-usuario-grupo">
+                                                     <img src="https://66.media.tumblr.com/1014660c32a3bbee4ab168136e6ac17b/f23b757ae3470152-a6/s250x400/c007d745ae83afb166b973de2ee22a24df67d51e.png" id="img-feed-grupo" alt="...">                                               
+                                                          <a href=""><p>@CelySastre</p></a> 
+                                                          <div class="opcoes"><a href=""><h3>...</h3></a></div>
+                                                   </div>
+                                                   
+                                                   <hr>
+                                                   <div class="publicacao-feed-texto">
+                                                     <div class="titulo">
+                                                       <h6>Matemática Básica</h6>
+                                                     </div>
+                                                     <p>Matemática matemática matemática matemática 23-(2+8)-7​
+                                                     </p>
+                                                     <div class="tags">
+                                                        <a href=""><p>#Matemática </a> </p>
+                                                        <a href=""><p>#Exercicio </a> </p>
+                                                        <a href=""><p>#Matemática </a> </p>
+                                                        <a href=""><p>#Exercicio </a> </p>
+                                                        <a href=""><p>#Exercicio </a> </p>
+                                                        
+                                              
+                                                       
+                          
+                                                     </div>
+                                                   </div>
+                                                   <hr>
+                                                   <div class="foster">
+                                                      <a><p><i class="far fa-thumbs-up  ml-1 "  ></i> 145 </p></a> 
+                                                        <div class="foster-resolver">
+                                                        <a href="" id="direito"><p><i class="fas fa-feather-alt"></i></i> resolver </a> </p>
+  
+                                                        </div>
+  
+                                                        <div class="status">
+                                                          <h5>   <i class="far fa-question-circle"></i></h5>
+                                                        </div>
+  
+                                                   
+                                                   </div>
+  
+                                          </div>
 
-
-
-            <div class="public">
-
-
-                publicação
-
-
-            </div>
+           
 
 
         </div>
@@ -327,10 +362,26 @@
                                 class="" alt="">
                         </div>
                         <div class="nome-raking col-5">
-                            <a href="#">@1234567890</a>
+                            <a href="#">@Anderson</a>
                         </div>
                         <div class="pontos col-4">
-                            <p>10pts</p>
+                            <p>30pts</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="usuarios-no-topo">
+                    <div class="row">
+                        <div class="foto-raking col-3">
+                            <img
+                                src="https://66.media.tumblr.com/1014660c32a3bbee4ab168136e6ac17b/f23b757ae3470152-a6/s250x400/c007d745ae83afb166b973de2ee22a24df67d51e.png"
+                                class="" alt="">
+                        </div>
+                        <div class="nome-raking col-5">
+                            <a href="#">@Celysastre</a>
+                        </div>
+                        <div class="pontos col-4">
+                            <p>20pts</p>
                         </div>
                     </div>
 
@@ -343,7 +394,7 @@
                                 class="" alt="">
                         </div>
                         <div class="nome-raking col-5">
-                            <a href="#">@celysastre</a>
+                            <a href="#">@Teste02</a>
                         </div>
                         <div class="pontos col-4">
                             <p>10pts</p>
