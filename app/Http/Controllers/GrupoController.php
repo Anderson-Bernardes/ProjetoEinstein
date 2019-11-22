@@ -28,7 +28,7 @@ class GrupoController extends Controller
 
 
 
-        return view('Grupos', ['user'=>$user], ['grupos'=>$grupos]);
+        return view('pagina-grupo', ['user'=>$user], ['grupos'=>$grupos]);
     }
 
     /**
