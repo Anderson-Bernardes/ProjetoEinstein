@@ -32,7 +32,7 @@ class HomeController extends Controller
         //var_dump($grupos);
         $user=Auth::user();
         $pc = new PostsController();
-        $postagens = $pc->index();
+        $postagens = $pc->getFeed();
         return view('pageHome', ['user'=>$user, 'postagens'=>$postagens], ['grupos'=>$grupos]);
     }
 

@@ -173,7 +173,7 @@
                                                 <div class="col-4">
                                                     <img
                                                         src="https://icon-icons.com/icons2/1736/PNG/96/4043274-avatar-einstein-professor-scientist_113259.png"
-                                                        id="einstein">
+                                                        id="einstein" alt="">
                                                     <p class="einstein" style="color: #6c757d;">Não existem ideias más,
                                                         sem erro não há crescimento.</p>
 
@@ -281,22 +281,70 @@
 
 
             </div>
+            <div class="card cardpost">
+                <div class="foto-usuario-grupo">
+                    <img src="https://66.media.tumblr.com/1014660c32a3bbee4ab168136e6ac17b/f23b757ae3470152-a6/s250x400/c007d745ae83afb166b973de2ee22a24df67d51e.png" id="img-feed-grupo" alt="...">
+                    <a href=""><p>@usuarioModelo</p></a>
+                    <div class="opcoes"><a href=""><h3>...</h3></a></div>
+                </div>
+
+                <hr>
+                <div class="publicacao-feed-texto">
+                    <div class="titulo">
+                        <h6>Tiulo do post modelo</h6>
+                    </div>
+                    <p>Texto do post modelo
+                    </p>
+                    <div class="tags">
+                        <a href=""><p>#Matemática </a> </p>
+                        <a href=""><p>#Exercicio </a> </p>
+                        <a href=""><p>#Matemática </a> </p>
+                        <a href=""><p>#Exercicio </a> </p>
+                        <a href=""><p>#Exercicio </a> </p>
 
 
 
+
+                    </div>
+                </div>
+                <hr>
+                <div class="foster">
+                    <a><p><i class="far fa-thumbs-up  ml-1 "  ></i>143</p></a>
+                    <div class="foster-resolver">
+                        <a href="" id="direito"><p><i class="fas fa-feather-alt"></i>resolver </a> </p>
+
+                    </div>
+
+                    <div class="status">
+                        <h5>   <i class="far fa-question-circle"></i></h5>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            @foreach($postagens['postagens'] as $post)
             <div class="card cardpost">
                                                     <div class="foto-usuario-grupo">
-                                                     <img src="https://66.media.tumblr.com/1014660c32a3bbee4ab168136e6ac17b/f23b757ae3470152-a6/s250x400/c007d745ae83afb166b973de2ee22a24df67d51e.png" id="img-feed-grupo" alt="...">                                               
-                                                          <a href=""><p>@CelySastre</p></a> 
+                                                     {{--<img src="https://66.media.tumblr.com/1014660c32a3bbee4ab168136e6ac17b/f23b757ae3470152-a6/s250x400/c007d745ae83afb166b973de2ee22a24df67d51e.png" id="img-feed-grupo" alt="...">--}}
+                                                        @if($user->foto == 'null')
+                                                            <img id="img-feed-grupo"
+                                                                 src="{{url('storage/FotoPerfil/defaultPerfil.jpg')}}" alt="...">
+                                                        @else
+                                                            <img id="img-feed-grupo"
+                                                                 src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="...">
+                                                        @endif
+                                                          <a href=""><p>{{$user->username}}</p></a>
                                                           <div class="opcoes"><a href=""><h3>...</h3></a></div>
                                                    </div>
-                                                   
+
                                                    <hr>
                                                    <div class="publicacao-feed-texto">
                                                      <div class="titulo">
-                                                       <h6>Matemática Básica</h6>
+                                                       <h6>{{$post['titulo']}}</h6>
                                                      </div>
-                                                     <p>Matemática matemática matemática matemática 23-(2+8)-7​
+                                                     <p>{{$post['texto']}}
                                                      </p>
                                                      <div class="tags">
                                                         <a href=""><p>#Matemática </a> </p>
@@ -304,30 +352,30 @@
                                                         <a href=""><p>#Matemática </a> </p>
                                                         <a href=""><p>#Exercicio </a> </p>
                                                         <a href=""><p>#Exercicio </a> </p>
-                                                        
-                                              
-                                                       
-                          
+
+
+
+
                                                      </div>
                                                    </div>
                                                    <hr>
                                                    <div class="foster">
-                                                      <a><p><i class="far fa-thumbs-up  ml-1 "  ></i> 145 </p></a> 
+                                                      <a><p><i class="far fa-thumbs-up  ml-1 "  ></i>{{$post['qtd_likes']}}</p></a>
                                                         <div class="foster-resolver">
-                                                        <a href="" id="direito"><p><i class="fas fa-feather-alt"></i></i> resolver </a> </p>
-  
+                                                        <a href="" id="direito"><p><i class="fas fa-feather-alt"></i>resolver </a> </p>
+
                                                         </div>
-  
+
                                                         <div class="status">
                                                           <h5>   <i class="far fa-question-circle"></i></h5>
                                                         </div>
-  
-                                                   
-                                                   </div>
-  
-                                          </div>
 
-           
+
+                                                   </div>
+
+                                          </div>
+@endforeach
+
 
 
         </div>

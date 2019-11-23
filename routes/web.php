@@ -23,6 +23,7 @@ Route::get('/pageHome', 'HomeController@index')->name('home');
 Route::get('/configuracoes', ['uses' => 'ConfigController@index'])->name('config');
 Route::get('/PerfilUsuario', 'UserController@index')->name('userPerfil');
 Route::get('/Grupos', 'GrupoController@index')->name('grupos');
+Route::get('/seguidores', 'GrupoController@getSeguidores')->name('grupoSeguidores');
 Route::get('/amigos', 'AmigosController@index')->name('amigos');
 Route::post('/criacao', 'GrupoController@store')->name('criaGrupo');
 Route::post('/fotoperfil', 'UserController@updateFotoUsario')->name('updateFotoUser');

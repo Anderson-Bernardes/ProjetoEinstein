@@ -31,6 +31,11 @@ class GrupoController extends Controller
         return view('pagina-grupo', ['user'=>$user], ['grupos'=>$grupos]);
     }
 
+    public function getSeguidores(){
+        $user=Auth::user();
+        return view('pagina-grupo-seguidores', ['user'=>$user]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

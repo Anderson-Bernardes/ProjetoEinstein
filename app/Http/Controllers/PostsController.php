@@ -50,6 +50,36 @@ class PostsController extends Controller
         return $posts;*/
     }
 
+    public function getFeed(){
+        $usuario = Auth::user();
+
+        $usuario->getAuthIdentifier();
+
+        $id = strval($usuario->getAuthIdentifier());
+        $dados = array( 'user_id'  => $id);
+        $dadosEncoded = json_encode($dados);
+
+        $url = "https://api-rede-einstein.herokuapp.com/api/post/feed";
+        //$url = "localhost:8080/api/post/feed";
+        $authorization = "Authorization: Bearer ".Session::get('token');
+
+
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json' , $authorization ));
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+        curl_setopt($ch,CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $dadosEncoded);
+
+        $result = curl_exec($ch);
+        $retorno = json_decode($result, true);
+
+        //print_r($retorno);
+
+
+        return $retorno;
+    }
+
     /**
      * Show the form for creating a new resource.
      *
