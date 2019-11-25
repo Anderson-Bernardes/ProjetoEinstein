@@ -66,7 +66,20 @@
 
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                           <i class="fa fa-user" style="color: rgb(255, 255, 255);">
+                                <span class="badge badge-danger"></span>
+                            </i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{{route("config")}}">Editar perfil</a>
+                            <a class="dropdown-item" href="{{route('logout')}}">Sair</a>
+                            </div>
+                        
+                    </li>
+                    <!-- <li class="nav-item">
 
                         <a class="nav-link" href="#">
                             <i class="fa fa-user" style="color: rgb(255, 255, 255);">
@@ -86,7 +99,7 @@
                                      src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="" id="image">
                             @endif
                         </a> -->
-                    </li>
+                    </li> 
 
                 </ul>
 

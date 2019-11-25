@@ -38,6 +38,7 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
+                        
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-bell" style="color: rgb(255, 255, 255);">
@@ -52,18 +53,29 @@
                                 </a>
                             </div>
                             <div id="center">
-                                ASDASDASDDDDDDDDDDDDDDD
-                                <div class="SolicitaAmizade">
-                                    BOTÕ
-                                </div>
+                                
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                           <i class="fa fa-user" style="color: rgb(255, 255, 255);">
+                                <span class="badge badge-danger"></span>
+                            </i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{{route("config")}}">Editar perfil</a>
+                            <a class="dropdown-item" href="{{route('logout')}}">Sair</a>
+                            </div>
+                        
+                    </li>
+
+                    <!-- <li class="nav-item">
 
                         <a class="nav-link" href="#">
                             <i class="fa fa-user" style="color: rgb(255, 255, 255);">
-                                <span class="badge badge-danger">3</span>
+                                <span class="badge badge-danger"></span>
                             </i>
                         </a>
                         <!-- <a class="nav-link" href="#">
@@ -78,7 +90,7 @@
                                      src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="" id="image">
                             @endif
                         </a> -->
-                    </li>
+                    <!-- </li> --> 
                 </ul>
             </div>
         </div>
@@ -109,7 +121,9 @@
                     @endif
                     <div class="nome-usuario">
                         <h6><strong>{{$user->name}}</strong></h6>
-                        <a href=""><p class="card-text"><small class="text-muted">{{$user->username}}</small></p></a>
+                        
+                        <a href=""><p class="card-text" ><small class="text-muted">@ {{$user->username}}</small></p></a>
+
                         <a><p><small><i class="fas fa-graduation-cap"></i> Iniciante I</small></p></a>
                         <a><p class="card-text"><small><i class="fas fa-map-marker-alt"></i> Minas Gerais,
                                     Brazil</small></p></a>
@@ -147,11 +161,11 @@
                             <div class="header">
                                 <ul class="nav" id="myTab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link " id="posts-tab" data-toggle="tab" href="#posts" role="tab"
+                                        <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab"
                                            aria-controls="posts" aria-selected="true">Postagens</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="grupos-tab" data-toggle="tab" role="tab"
+                                        <a class="nav-link" id="grupos-tab" data-toggle="tab" role="tab"
                                            aria-controls="grupos" aria-selected="false" href="#grupos">Grupos</a>
                                     </li>
                                     <li class="nav-item">
@@ -163,14 +177,14 @@
                                            aria-controls="images" aria-selected="false" href="#">Cursos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="images-tab" data-toggle="tab" role="tab"
-                                           aria-controls="images" aria-selected="false" href="#">Emblemas</a>
+                                        <a class="nav-link" id="Emblemas-tab" data-toggle="tab" role="tab"
+                                           aria-controls="Emblemas" aria-selected="false" href="#Emblemas">Emblemas</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="body">
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                                    <div class="tab-pane fade  active show" id="posts" role="tabpanel" aria-labelledby="posts-tab">
                                         @foreach($postagens['postagens'] as $post)
                                         <div class="card card-publicao">
                                             <div class="foto-usuario-grupo">
@@ -184,8 +198,11 @@
                                                     <img id="img-feed-grupo"
                                                          src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="...">
                                                 @endif
-                                                <a href="#"><p>{{$user->username}}</p></a>
-                                                <div class="opcoes"><a href=""><h3>...</h3></a></div>
+                                                <a href="#"><p>@
+                                                    {{$user->username}}</p></a>
+                                                <div class="opcoes"><a href=""><h3>...</h3></a>
+                                                
+                                            </div>
                                             </div>
                                             <div class="publicacao-feed-texto">
                                                 <div class="titulo">
@@ -204,7 +221,6 @@
                                             <hr>
                                             <div class="foster">
                                                 <a><p><i class="far fa-thumbs-up  ml-1 "></i> {{$post['qtd_likes']}} </p></a>
-                                                <a><p><i class="fas fa-share-square  ml-1"></i> 123</p></a>
                                                 <div class="foster-resolver">
                                                     <a href="" id="direito"><p><i class="fas fa-feather-alt"></i>
                                                             resolver </p></a>
@@ -216,12 +232,21 @@
                                         </div>
                                         @endforeach
                                     </div>
-                                    <div class="tab-pane fade show active" id="grupos" role="tabpanel"
+                                    <div class="tab-pane fade" id="grupos" role="tabpanel"
                                          aria-labelledby="grupos-tab">
                                         <div class="row">
                                             <div class="col-12">
 
                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="Emblemas" role="tabpanel"
+                                         aria-labelledby="Emblemas-tab">
+                                        <div class="row">
+                                            <div class="col-12">
+
+                                                emblemas
                                             </div>
                                         </div>
                                     </div>

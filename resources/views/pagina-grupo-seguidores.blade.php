@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/pagina-grupo-seguidores.css">
-    <link rel="stylesheet" type="text/css" href="css/pagina-grupo.css">
+    <link rel="stylesheet" type="text/css" href="css/pagina-grupo-2.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
 
 
@@ -66,13 +66,13 @@
 
                   <a class="nav-link" href="#">
                     <i class="fa fa-user"  style="color: rgb(255, 255, 255);">
-                      <span class="badge badge-danger" >3</span>
+                      <span class="badge badge-danger" ></span>
                     </i>
 
                   </a>
-                  <a class="nav-link" href="#">
+                  <!-- <a class="nav-link" href="#">
                       <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" id="image" alt="">
-                  </a>
+                  </a> -->
               </li>
 
           </ul>
@@ -89,9 +89,10 @@
 
                                     <div class="row">
                                         <div class="col-12">
-                                                <div class="card cardcapa">
-                                                        <img src="https://i2.wp.com/enemacademy.com/wp-content/uploads/2017/01/geometria.jpg" class="capa-imagem" alt="...">
-                                                 </div>
+                                        <div class="card cardcapa">
+                        <div class="cardheader">
+                        </div>
+                    </div>
                                                  <div class="foto-grupo">
 
                                                         <img src="http://atividadesprofessores.com.br/wp-content/uploads/2016/11/corujinha-azul-03-918x1024.png" id="img-grupo" alt="...">
@@ -145,9 +146,9 @@
                                               <div class="grow">
                                                   <div class="card cardseguidores">
                                                       <div class="seguidor-foto-nome">
-                                                          <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" id="seguidor-imagem" >
-                                                          <a href=""><h6><strong>@CelySastre </strong></h6></a>
-                                                          <p><small class="text-muted"><i class="fas fa-graduation-cap"></i> Estudante</small></p>
+                                                          <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ohc=3QaoTQi_UxAAQlz796Kj85iiRJdwhJ7oJkbUlKrH_bCwCPCmHgksuv6pA&_nc_ht=scontent.fpoo3-1.fna&oh=8c20de47713b45053f66acb38d45ee0a&oe=5E859D1D" id="seguidor-imagem" >
+                                                          <a href=""><h6><strong>@Celysastyr</strong></h6></a>
+                                                          <p><small class="text-muted"><i class="fas fa-graduation-cap"></i> Iniciante l</small></p>
                                                       </div>
                                                       <div class="seguir">
                                                           <a href="#" id="EsconderBotao" class="btn btn-secondary btn-sm btn-custom"><i class="fas fa-user-check"> </i></a>
@@ -160,9 +161,9 @@
                                               <div class="grow">
                                                   <div class="card cardseguidores">
                                                       <div class="seguidor-foto-nome">
-                                                          <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" id="seguidor-imagem" >
+                                                          <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ohc=3QaoTQi_UxAAQlz796Kj85iiRJdwhJ7oJkbUlKrH_bCwCPCmHgksuv6pA&_nc_ht=scontent.fpoo3-1.fna&oh=8c20de47713b45053f66acb38d45ee0a&oe=5E859D1D" id="seguidor-imagem" >
                                                           <a href=""><h6><strong>@CelySastre </strong></h6></a>
-                                                          <p><small class="text-muted"><i class="fas fa-graduation-cap"></i> Estudante</small></p>
+                                                          <p><small class="text-muted"><i class="fas fa-graduation-cap"></i> Iniciante l</small></p>
                                                       </div>
                                                       <div class="seguir">
                                                           <a href="#" id="EsconderBotao" class="btn btn-secondary btn-sm btn-custom"><i class="fas fa-user-check"> </i></a>
@@ -175,9 +176,9 @@
                                               <div class="grow">
                                                   <div class="card cardseguidores">
                                                       <div class="seguidor-foto-nome">
-                                                          <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" id="seguidor-imagem">
+                                                          <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ohc=3QaoTQi_UxAAQlz796Kj85iiRJdwhJ7oJkbUlKrH_bCwCPCmHgksuv6pA&_nc_ht=scontent.fpoo3-1.fna&oh=8c20de47713b45053f66acb38d45ee0a&oe=5E859D1D" id="seguidor-imagem">
                                                           <a href=""><h6><strong>@CelySastre </strong></h6></a>
-                                                          <p><small class="text-muted"><i class="fas fa-graduation-cap"></i> Estudante</small></p>
+                                                          <p><small class="text-muted"><i class="fas fa-graduation-cap"></i> Iniciante l</small></p>
                                                       </div>
                                                       <div class="seguir">
                                                           <a href="#" id="EsconderBotao" class="btn btn-secondary btn-sm btn-custom"><i class="fas fa-user-check"> </i></a>

@@ -62,7 +62,20 @@
 
                   </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dropdown">
+                        
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                           <i class="fa fa-user" style="color: rgb(255, 255, 255);">
+                                <span class="badge badge-danger"></span>
+                            </i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{{route("config")}}">Editar perfil</a>
+                            <a class="dropdown-item" href="{{route('logout')}}">Sair</a>
+                            </div>
+                        
+                    </li>
+                <!-- <li class="nav-item">
 
                   <a class="nav-link" href="#">
                     <i class="fa fa-user"  style="color: rgb(255, 255, 255);">
@@ -73,7 +86,7 @@
                   <a class="nav-link" href="#">
                       <img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" id="image" alt="">
                   </a>
-              </li>
+              </li> -->
 
           </ul>
 
@@ -89,9 +102,10 @@
 
                                     <div class="row">
                                         <div class="col-12">
-                                                <div class="card cardcapa">
-                                                        <img src="https://i2.wp.com/enemacademy.com/wp-content/uploads/2017/01/geometria.jpg" class="capa-imagem" alt="...">
-                                                 </div>
+                                        <div class="card cardcapa">
+                        <div class="cardheader">
+                        </div>
+                    </div>
                                                  <div class="foto-grupo">
 
                                                         <img src="http://atividadesprofessores.com.br/wp-content/uploads/2016/11/corujinha-azul-03-918x1024.png" id="img-grupo" alt="...">

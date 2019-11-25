@@ -67,7 +67,20 @@
 
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                           <i class="fa fa-user" style="color: rgb(255, 255, 255);">
+                                <span class="badge badge-danger"></span>
+                            </i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{{route("config")}}">Editar perfil</a>
+                            <a class="dropdown-item" href="{{route('logout')}}">Sair</a>
+                            </div>
+                        
+                    </li>
+                    <!-- <li class="nav-item">
 
                         <a class="nav-link" href="#">
                             <i class="fa fa-user" style="color: rgb(255, 255, 255);">
@@ -75,7 +88,7 @@
                             </i>
 
                         </a>
-                    <!-- <a class="nav-link" href="{{route("userPerfil")}}">
+                    <a class="nav-link" href="{{route("userPerfil")}}">
                             {{--<img
                                 src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D"
                                 id="image">--}}
@@ -87,7 +100,7 @@
                              src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="" id="image">
                             @endif
                         </a> -->
-                    </li>
+                    </li> 
                 </ul>
             </div>
         </div>
@@ -99,6 +112,7 @@
 
             <div class="card perfil">
                 <div class="perfil-foto">
+                    
                     <!--<img src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t1.0-9/14517422_945412785570713_2191894243524876629_n.jpg?_nc_cat=109&_nc_ht=scontent.fpoo3-1.fna&oh=9a20577dddaca6b6a1507978493fbbe2&oe=5D70C21D" class="img-thumbnail">-->
                     @if($user->foto == 'null')
                         <img class="img-thumbnail"
@@ -109,7 +123,7 @@
                     @endif
                 </div>
                 <P class="nome" href="#">{{$user->name}}</p>
-                <a href="{{route('userPerfil')}}" class="apelido">{{$user->username}}</a>
+                <span class="input-group-addon mb-3" >@<a href="{{route('userPerfil')}}" class="apelido">{{$user->username}}</a></span>
 
             </div>
             <div class="navcard">
@@ -284,7 +298,7 @@
             <div class="card cardpost">
                 <div class="foto-usuario-grupo">
                     <img src="https://66.media.tumblr.com/1014660c32a3bbee4ab168136e6ac17b/f23b757ae3470152-a6/s250x400/c007d745ae83afb166b973de2ee22a24df67d51e.png" id="img-feed-grupo" alt="...">
-                    <a href=""><p>@usuarioModelo</p></a>
+                    <a href=""><p>@usuarioModelo  <i class="fas fa-layer-group"></i>  publicou em matemática</p> </a> 
                     <div class="opcoes"><a href=""><h3>...</h3></a></div>
                 </div>
 
@@ -335,7 +349,7 @@
                                                             <img id="img-feed-grupo"
                                                                  src="{{url('storage/FotoPerfil/'.$user->foto)}}" alt="...">
                                                         @endif
-                                                          <a href=""><p>{{$user->username}}</p></a>
+                                                          <a href=""><p>@ {{$user->username}}  <i class="fas fa-layer-group"></i>  publicou em matemática</p></a>
                                                           <div class="opcoes"><a href=""><h3>...</h3></a></div>
                                                    </div>
 
@@ -360,7 +374,7 @@
                                                    </div>
                                                    <hr>
                                                    <div class="foster">
-                                                      <a><p><i class="far fa-thumbs-up  ml-1 "  ></i>{{$post['qtd_likes']}}</p></a>
+                                                      <a><p><i class="far fa-thumbs-up  ml-1 " ></i> {{$post['qtd_likes']}}</p></a>
                                                         <div class="foster-resolver">
                                                         <a href="" id="direito"><p><i class="fas fa-feather-alt"></i>resolver </a> </p>
 
@@ -406,7 +420,7 @@
                     <div class="row">
                         <div class="foto-raking col-3">
                             <img
-                                src="https://www.orkut.br.com/assets/img/profile/4024549345d688f480c2cb6.13537197_9221a8459ee197993a99f95859f5d4fb.jpg"
+                                src="https://scontent.fpoo3-1.fna.fbcdn.net/v/t31.0-8/s960x960/28234918_1503757029741872_7658921430705350976_o.jpg?_nc_cat=101&_nc_ohc=zZmIJWmMO2AAQnOok_ejbEw-pM2o_duMqw0oOyNIqTxgFxZgRaPQVNdQg&_nc_ht=scontent.fpoo3-1.fna&oh=f6aecd811ba7127928a652b32ff76d07&oe=5E8BAC32"
                                 class="" alt="">
                         </div>
                         <div class="nome-raking col-5">

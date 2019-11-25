@@ -87,6 +87,32 @@
   color:#6c757d;
 
 }
+.cardpost p {
+
+ 
+    margin-top: 25px;
+    margin-bottom: 1rem;
+    margin-left: 93px;
+    color: rgb(90, 84, 173);
+    
+}
+.cardpost .publicacao-feed-texto p {
+
+  color: #000;
+  
+    
+}
+
+
+.cardpost .opcoes a {
+
+
+  font-weight: 600;
+  color: #6c757d;
+  float: right;
+  margin-right: 28px;
+  margin-top: -48px;
+}
   /* ^ card com foto e nome direito */
   /* ^ config a nav em baixo */
 .navcard .card .nav-link {
@@ -98,7 +124,7 @@
 }
 
 .navcard .card .nav-link.active, .show>.nav-link {
-  background: #f9f9fb;
+  /* background: #f9f9fb; */
   color: #191919;
   border-right: 4px solid  rgb(90, 84, 173);
  

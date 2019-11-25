@@ -28,7 +28,6 @@
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 5px solid rgba(255,255,255,0.7);
-    
 
 }
 .foto-grupo {
@@ -253,7 +252,9 @@ color: #3db0f7;
     border-radius: 50%;
     border: 5px solid rgba(255,255,255,0.7);
     float: left;
-   
+    margin-left: 27px;
+        margin-top: 10px;
+
 
 }
 
